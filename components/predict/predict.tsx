@@ -7,7 +7,7 @@ export const Predict = () => {
         <Image
           className="lg:w-[436px] lg:h-[580px] lg:object-center w-full h-[375px] object-cover"
           src="/hero-of-ukraine/Depositphotos_567742266_XL 2.jpg"
-          blurDataURL="/Depositphotos_567742266_XL 2.jpg"
+          blurDataURL="/hero-of-ukraine/Depositphotos_567742266_XL 2.jpg"
           placeholder="blur"
           layout="raw"
           width={436}
@@ -19,7 +19,7 @@ export const Predict = () => {
         <Image
           className="lg:w-[532px] lg:h-[400px] lg:object-center w-full h-[218px] object-cover"
           src="/hero-of-ukraine/Depositphotos_567758610_XL 1.jpg"
-          blurDataURL="/Depositphotos_567758610_XL 1.jpg"
+          blurDataURL="/hero-of-ukraine/Depositphotos_567758610_XL 1.jpg"
           placeholder="blur"
           layout="raw"
           width={532.64}

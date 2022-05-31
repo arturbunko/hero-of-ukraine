@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           <section id="images" className="inline-flex gap-5 lg:px-6 px-0 lg:mt-36 mt-16">
             <Image
               src="/hero-of-ukraine/Depositphotos_563061124_S 1.jpg"
-              blurDataURL="/Depositphotos_563061124_S 1.jpg"
+              blurDataURL="/hero-of-ukraine/Depositphotos_563061124_S 1.jpg"
               placeholder="blur"
               layout="raw"
               width={400}
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
             />
             <Image
               src="/hero-of-ukraine/Depositphotos_563061124_S 2.jpg"
-              blurDataURL="/Depositphotos_563061124_S 2.jpg"
+              blurDataURL="/hero-of-ukraine/Depositphotos_563061124_S 2.jpg"
               placeholder="blur"
               layout="raw"
               width={400}
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
             />
             <Image
               src="/hero-of-ukraine/Depositphotos_563061124_S 3.jpg"
-              blurDataURL="/Depositphotos_563061124_S 3.jpg"
+              blurDataURL="/hero-of-ukraine/Depositphotos_563061124_S 3.jpg"
               placeholder="blur"
               layout="raw"
               width={400}
