@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react';
 
-const getOrientation = () => window.screen?.orientation?.type;
+const getOrientation = (): OrientationType => {
+  const mql = window.matchMedia('(orientation: portrait)');
+
+  if (mql.matches) {
+    return 'portrait-primary';
+  }
+  return 'landscape-primary';
+};
 
 const useScreenOrientation = () => {
   const [orientation, setOrientation] = useState<OrientationType>(() => {
@@ -14,9 +21,11 @@ const useScreenOrientation = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('orientationchange', updateOrientation);
+    const mql = window.matchMedia('(orientation: portrait)');
+
+    mql.addEventListener('change', updateOrientation);
     return () => {
-      window.removeEventListener('orientationchange', updateOrientation);
+      mql.removeEventListener('change', updateOrientation);
     };
   }, []);
 
