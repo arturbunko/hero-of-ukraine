@@ -30,9 +30,15 @@ export const Header = () => {
         </ul>
       </nav>
       <button className="flex flex-row items-center">
-        <Image className="rounded-full" src="/eng.png" layout="fixed" width={24} height={24} />
+        <Image
+          className="rounded-full"
+          src="/hero-of-ukraine/eng.png"
+          layout="raw"
+          width={24}
+          height={24}
+        />
         <p className="ml-2 mr-5 lx:text-body text-bodyMob">English</p>
-        <Image src="/caret_down.svg" layout="fixed" width={10} height={15} />
+        <Image src="/hero-of-ukraine/caret_down.svg" layout="fixed" width={10} height={15} />
       </button>
     </header>
   );
