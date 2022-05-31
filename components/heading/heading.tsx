@@ -7,7 +7,7 @@ const Map = dynamic(() => import('../map/map'), { ssr: false });
 export const Heading = () => {
   return (
     <section id="heading" className="flex flex-col">
-      <div className="self-end lg:w-[1050px] lg:h-[702px] w-[434px] h-[290px]">
+      <div className="self-end lg:w-[1050px] lg:h-[702px] w-[434px] h-[290px] z-10">
         <Map className="self-end" />
       </div>
       <div className="flex flex-col -mt-44">
