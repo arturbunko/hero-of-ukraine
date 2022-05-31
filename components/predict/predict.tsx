@@ -6,7 +6,7 @@ export const Predict = () => {
       <div className="w-[60%] lg:h-[580px] h-[375px]">
         <Image
           className="lg:w-[436px] lg:h-[580px] lg:object-center w-full h-[375px] object-cover"
-          src="/Depositphotos_567742266_XL 2.jpg"
+          src="/hero-of-ukraine/Depositphotos_567742266_XL 2.jpg"
           blurDataURL="/Depositphotos_567742266_XL 2.jpg"
           placeholder="blur"
           layout="raw"
@@ -18,7 +18,7 @@ export const Predict = () => {
       <div className="flex flex-col lg:w-full justify-between w-[40%] lg:ml-[10%] ml-[5%]">
         <Image
           className="lg:w-[532px] lg:h-[400px] lg:object-center w-full h-[218px] object-cover"
-          src="/Depositphotos_567758610_XL 1.jpg"
+          src="/hero-of-ukraine/Depositphotos_567758610_XL 1.jpg"
           blurDataURL="/Depositphotos_567758610_XL 1.jpg"
           placeholder="blur"
           layout="raw"
