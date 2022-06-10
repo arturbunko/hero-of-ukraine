@@ -6,7 +6,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import useScreenOrientation from '../../hooks/useScreenOrientation';
 
 export const OrientationObserver: FC<{ children: React.ReactNode }> = ({ children }) => {
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isMobile = useMediaQuery('(max-width: 640px)');
   const orientation = useScreenOrientation();
 
   const defaultOptions = {

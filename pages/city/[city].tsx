@@ -1,8 +1,12 @@
-import { useRouter } from 'next/router';
-import { WantToHelp } from '../../components/want-to-help/want-to-help';
-import { Footer } from '../../components/footer/footer';
-import { ButtonFlat } from '../../components/button-flat/button-flat';
-import { Layout } from '../../components/layout/layout';
+import type {GetStaticPropsContext} from "next";
+import {useRouter} from 'next/router';
+
+import {Footer} from '../../components/footer/footer';
+import {Layout} from '../../components/layout/layout';
+import {BackButton} from "../../components/back-button/back-button";
+import {ButtonFlat} from '../../components/button-flat/button-flat';
+import {WantToHelp} from '../../components/want-to-help/want-to-help';
+import {Background} from "../../components/city-background/background";
 
 const City = () => {
   const router = useRouter();
@@ -49,28 +53,21 @@ const City = () => {
   );
 };
 
-const BackButton = () => {
-  const router = useRouter();
-
-  const handleBackClicked = () => {
-    router.back();
+export async function getStaticProps({locale}: GetStaticPropsContext) {
+  return {
+    props: {
+      intl: (await import(`../../intl/${locale}.json`)).default
+    }
   };
+}
 
-  return (
-    <button
-      onClick={handleBackClicked}
-      className="self-start cursor-pointer z-10 lg:w-[57px] lg:h-[57px] w-[27px] h-[27px] hover:-translate-x-3 ease-in duration-300 bg-arrow-left hover:bg-arrow-left-active bg-no-repeat bg-contain"
-    />
-  );
-};
-
-const Background = () => {
-  return (
-    <div className="absolute w-full h-full">
-      <div className="h-1/2 w-full image-gradient-1" />
-      <div className="h-1/2 w-full object-cover image-gradient-2" />
-    </div>
-  );
-};
+export async function getStaticPaths() {
+return {
+  paths: [
+    { params: { city: "" } }
+  ],
+  fallback: true // false or 'blocking'
+}
+}
 
 export default City;

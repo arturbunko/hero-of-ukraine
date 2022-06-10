@@ -34,14 +34,14 @@ module.exports = {
         '92px',
         {
           letterSpacing: 0,
-          lineHeight: 0,
+          lineHeight: 1,
         },
       ],
       h2: [
         '80px',
         {
           letterSpacing: 0,
-          lineHeight: 0,
+          lineHeight: 1,
         },
       ],
       h3: [
@@ -72,11 +72,18 @@ module.exports = {
           lineHeight: '140%',
         },
       ],
+      h0Lg: [
+        '120px',
+        {
+          letterSpacing: 0,
+          lineHeight: 1,
+        },
+      ],
       h0Mob: [
         '62px',
         {
           letterSpacing: 0,
-          lineHeight: 0,
+          lineHeight: 1,
         },
       ],
       h1Mob: [

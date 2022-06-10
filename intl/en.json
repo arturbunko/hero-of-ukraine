@@ -1,0 +1,45 @@
+{
+  "Header": {
+    "about_us": "About us",
+    "contact": "Contact"
+  },
+  "Progress": {
+    "donations": "donations"
+  },
+  "Heading": {
+    "title": "war kills nature.",
+    "description": "Russia is committing numerous war crimes in Ukraine, including crimes against the environment, also known as ecocides. More than 200 ecocides have been documented since the start of the full-scale invasion.",
+    "clarification": "According to the Ukrainian Environmental Protection Group (UNCG), 44% of Ukraine's most valuable protected areas are engulfed in war."
+  },
+  "Support Button": {
+    "label": "Support"
+  },
+  "Help Us": {
+    "title1": "Help us save",
+    "title2": "the nature",
+    "text1": "Indifference is supporting violence. Our app is designed to help plants and the environment so we cannot silently observe how Russia destroys the nature of Ukraine. Join us in helping liberated natural areas to get back on track: the Chornobyl Radiation and Ecological Reserve, the Hetman and Mezyn National Parks, and the Zalissya National Park.",
+    "text2": "You can help Ukrainian nature recover too. Donation of just $10 saves 1 hectare of land."
+  },
+  "Predict": {
+    "text": "At least 219,600 people have lost their homes because of russian-ukrainian war, according to the Parliament Commissioner for Human Rights Liudmila Denisova. Moreover, this year's sowing campaign is quite extreme due to mining and combat actions. According to the Secretary-General of the United Nations Antonio Guterres, russia's war against Ukraine can throw more than 1/5 of humanity into hunger."
+  },
+  "Violence": {
+    "text": "Needless to say that the war is equally intense on animal and plant life. The last European steppes, Gesner's tulip fields, and unique animal populations are in the combat zone. Unfortunately, reserve and national park staff cannot perform their duties when shells explode and snipers operate.\n\nThe Chornobyl Radiation and Ecological Reserve must have borne the brunt: at least 15,000 hectares have burned down. The Hetman National Park in Trostyanets is free from occupiers, but the territory is densely mined. Experts predict the wildfires' threat to grow in May-June, yet the Russian troops have stolen the firefighting equipment. For the record, fire is the leading cause of death in wildlife.\n\nPink lakes and Red Book orchids - russia is wiping the Kinburn Spit Reserve off the face of the Earth as you read this. The National Gene Bank of Plants in Kharkiv, one of the largest seed banks in the world, was destroyed by russian air raids. The seeds of unique ancient plants are gone, and we will never be able to restore them. Bison, the largest European animal; Przewalski's horse, the only European wild horse; and the white-tailed eagle, the largest eagle in Europe - they are all in danger.",
+    "text-part-one": "Indifference is supporting",
+    "text-part-two": "violence",
+    "text-part-three": ". Our app is designed to help plants and the environment so we cannot silently observe how Russia destroys the nature of Ukraine. Join us in helping liberated natural areas to get back on track: the Chornobyl Radiation and Ecological Reserve, the Hetman and Mezyn National Parks, and the Zalissya National Park."
+  },
+  "About Us": {
+    "text": "Together, we will help Ukraine's nature recover after the war."
+  },
+  "Want to help": {
+    "Want to help": "Want to help?",
+    "Donate Now": "Donate Now."
+  },
+  "Footer": {
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "subscription": "Subscription Policy",
+    "reserved": "All rights reserved"
+  }
+}

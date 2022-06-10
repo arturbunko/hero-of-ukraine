@@ -1,6 +1,8 @@
-import Head from 'next/head';
-import type { AppProps } from 'next/app';
 import { AnimatePresence } from 'framer-motion';
+import { NextIntlProvider } from 'next-intl';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -14,7 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Hero of Ukraine</title>
       </Head>
       <AnimatePresence exitBeforeEnter initial={false} onExitComplete={() => window.scrollTo(0, 0)}>
-        <Component {...pageProps} />
+        <NextIntlProvider messages={pageProps.intl}>
+          <Component {...pageProps} />
+        </NextIntlProvider>
       </AnimatePresence>
     </>
   );

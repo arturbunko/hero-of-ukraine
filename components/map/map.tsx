@@ -5,9 +5,7 @@ import { MapDesktop } from './map-desktop';
 import { MapMobile } from './map-mobile';
 
 const Map: FC<{ className?: string }> = ({ className }) => {
-  const isDesktop = useMediaQuery('(min-width: 1024px)');
-
-  console.log({ isDesktop });
+  const isLargeScreen = useMediaQuery('(min-width: 1024px)');
 
   const router = useRouter();
 
@@ -17,7 +15,7 @@ const Map: FC<{ className?: string }> = ({ className }) => {
 
   return (
     <>
-      {isDesktop ? (
+      {isLargeScreen ? (
         <MapDesktop className={className} onClick={handleMapClicked} />
       ) : (
         <MapMobile className={className} onClick={handleMapClicked} />

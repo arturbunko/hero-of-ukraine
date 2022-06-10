@@ -1,8 +1,13 @@
-import Image from 'next/image';
+import { useTranslations } from 'use-intl';
+import dynamic from 'next/dynamic';
+const LanguageDropdown = dynamic(() => import('../language-dropdown/language-dropdown'), {
+  ssr: false,
+});
 
 export const Header = () => {
+  const t = useTranslations('Header');
+
   const scrollTo = (id: string) => () => {
-    console.log({ id, element: document.getElementById(id) });
     document
       .getElementById(id)
       ?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
@@ -19,27 +24,17 @@ export const Header = () => {
             onClick={scrollTo('about-us')}
             className="lg:text-body text-bodyMob text-white font-mariupol hover:bg-gradient-to-r hover:from-blue hover:to-yellow hover:bg-clip-text hover:text-fill-transparent cursor-pointer"
           >
-            About us
+            {t('about_us')}
           </li>
           <li
             onClick={scrollTo('contact')}
             className="ml-6 lg:text-body text-bodyMob text-white font-mariupol hover:bg-gradient-to-r hover:from-blue hover:to-yellow hover:bg-clip-text hover:text-fill-transparent cursor-pointer"
           >
-            Contact
+            {t('contact')}
           </li>
         </ul>
       </nav>
-      <button className="flex flex-row items-center">
-        <Image
-          className="rounded-full"
-          src="/hero-of-ukraine/eng.png"
-          layout="raw"
-          width={24}
-          height={24}
-        />
-        <p className="ml-2 mr-5 lx:text-body text-bodyMob">English</p>
-        <Image src="/hero-of-ukraine/caret_down.svg" layout="fixed" width={10} height={15} />
-      </button>
+      <LanguageDropdown />
     </header>
   );
 };

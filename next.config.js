@@ -1,7 +1,14 @@
+
+const isDev = process.env.NODE_ENV === "development";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n: {
+    locales: ['en', 'ua'],
+    defaultLocale: 'en',
+  },
   reactStrictMode: true,
-  basePath: '/hero-of-ukraine',
+  basePath: isDev ? '' : '/hero-of-ukraine',
   experimental: {
     runtime: 'nodejs',
     serverComponents: true,

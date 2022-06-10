@@ -1,7 +1,10 @@
 import { Facebook } from '../facebook/facebook';
 import { Instagram } from '../instagram/instagram';
+import { useTranslations } from 'use-intl';
 
 export const Footer = () => {
+  const t = useTranslations('Footer');
+
   return (
     <footer id="contact" className="flex items-center justify-between mb-10 lg:mt-36 mt-14">
       <div className="text-white-60 max-w-[260px]">
@@ -11,7 +14,7 @@ export const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Terms of Service{' '}
+          {t('terms')}{' '}
         </a>{' '}
         ·{' '}
         <a
@@ -20,7 +23,7 @@ export const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Privacy Policy
+          {t('privacy')}
         </a>{' '}
         ·{' '}
         <a
@@ -29,10 +32,10 @@ export const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Subscription Policy
+          {t('subscription')}
         </a>{' '}
         · <span>PlantIn© 2022. </span>
-        <span>All rights reserved</span>
+        <span>{t('reserved')}</span>
       </div>
       <div className="flex gap-6">
         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/plantinapp/">
