@@ -13,7 +13,7 @@ export const Heading = () => {
       <div className="self-end xl:w-[1050px] lg:w-[950px] lg:h-[702px] w-[434px] h-[290px] z-10">
         <Map className="self-end" />
       </div>
-      <div className="flex flex-col lg:-mt-[26rem] -mt-60">
+      <div className="flex flex-col lg:-mt-[28rem] -mt-52">
         <h1 className="tracking-tighter xl:text-h1 lg:text-h2 text-h2Mob xl:leading-none lg:leading-none leading-none text-white font-kharkiv w-full lg:max-w-full lg:max-w-[895px] max-w-[390px]">
           {t('title')}
         </h1>
