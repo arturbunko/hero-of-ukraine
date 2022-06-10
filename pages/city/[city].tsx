@@ -1,12 +1,12 @@
-import type {GetStaticPropsContext} from "next";
-import {useRouter} from 'next/router';
+import type { GetStaticPropsContext } from 'next';
+import { useRouter } from 'next/router';
 
-import {Footer} from '../../components/footer/footer';
-import {Layout} from '../../components/layout/layout';
-import {BackButton} from "../../components/back-button/back-button";
-import {ButtonFlat} from '../../components/button-flat/button-flat';
-import {WantToHelp} from '../../components/want-to-help/want-to-help';
-import {Background} from "../../components/city-background/background";
+import { Footer } from '../../components/footer/footer';
+import { Layout } from '../../components/layout/layout';
+import { BackButton } from '../../components/back-button/back-button';
+import { ButtonFlat } from '../../components/button-flat/button-flat';
+import { WantToHelp } from '../../components/want-to-help/want-to-help';
+import { Background } from '../../components/city-background/background';
 
 const City = () => {
   const router = useRouter();
@@ -53,21 +53,19 @@ const City = () => {
   );
 };
 
-export async function getStaticProps({locale}: GetStaticPropsContext) {
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {
     props: {
-      intl: (await import(`../../intl/${locale}.json`)).default
-    }
+      intl: (await import(`../../intl/${locale}.json`)).default,
+    },
   };
 }
 
 export async function getStaticPaths() {
-return {
-  paths: [
-    { params: { city: "" } }
-  ],
-  fallback: true // false or 'blocking'
-}
+  return {
+    paths: [{ params: { city: 'zalissya' } }],
+    fallback: 'blocking', // false or 'blocking'
+  };
 }
 
 export default City;
