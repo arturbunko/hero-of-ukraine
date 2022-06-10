@@ -4,7 +4,10 @@ export const HelpUs = () => {
   const t = useTranslations('Help Us');
 
   return (
-    <section className="relative lg:mt-64 lg:pt-14 mt-28 lg:pt-7 lg:mb-44 lg:pb-14 mb-14 pb-7">
+    <section
+      id="about-us"
+      className="relative lg:mt-64 lg:pt-14 mt-28 lg:pt-7 lg:mb-44 lg:pb-14 mb-14 pb-7"
+    >
       <div className="absolute w-full h-full top-0 left-0 bg-ukraine-emblem bg-contain bg-center bg-no-repeat mix-blend-overlay -z-0" />
       <h2 className="xl:text-h0 lg:text-h0Lg text-h0Mob text-transparent font-kharkiv text-stroke-1.5 text-stroke-white">
         {t('title1')}
