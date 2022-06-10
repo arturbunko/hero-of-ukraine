@@ -19,7 +19,7 @@ export const Predict = () => {
           loading="lazy"
         />
       </div>
-      <div className="flex flex-col lg:w-full justify-between w-[40%] lg:ml-[10%] ml-[5%]">
+      <div className="flex flex-col lg:w-full justify-between w-[40%] lg:ml-[10%] ml-[5%] md:gap-0 gap-1">
         <ImagePath
           className="lg:w-[532px] lg:h-[400px] lg:object-center w-full h-[218px] object-cover"
           src="/Depositphotos_567758610_XL 1.jpg"

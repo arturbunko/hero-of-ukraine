@@ -12,7 +12,7 @@ export const HelpUs = () => {
       <div className="flex flex-row items-center justify-between mt-12 text-white">
         <div className="text-white lg:text-body text-bodyMob lg:max-w-md max-w-sm">
           <p>{t('text1')}</p>
-          <p className="lg:mt-8 mt-4">{t('text1')}</p>
+          <p className="lg:mt-8 mt-4">{t('text2')}</p>
         </div>
         <h2 className="self-start xl:text-h0 lg:text-h0Lg lg:leading-[0.8] text-h0Mob leading-[0.8] text-transparent font-kharkiv text-stroke-1.5 text-stroke-white">
           {t('title2')}

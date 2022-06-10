@@ -146,14 +146,33 @@
   #radar  {
     fill: rgba(205, 0, 1, .5);
     animation: pulse2 1.5s ease-in-out infinite;
+    filter: blur(4px);
   }
 
   #cored {
     fill: #CD0001;
     opacity: 1;
-    animation: pulse1 1.5s ease-in-out infinite;
+    /*animation: pulse1 1.5s ease-in-out infinite;*/
   }
 
+  .glowing-button-red {
+    @apply z-20;
+  }
+
+  @keyframes glowingRed {
+    0% {
+      filter: drop-shadow(0 0 0px #CD0001);
+    }
+
+    50% {
+      filter: drop-shadow( 0 0 5px #CD0001) drop-shadow( 0 0 15px #CD0001) drop-shadow( 0 0 20px #CD0001);
+      /*filter: drop-shadow(0 16px 32px #CD0001);*/
+    }
+
+    100% {
+      filter: drop-shadow( 0 0 10px #CD0001) drop-shadow( 0 0 30px #CD0001) drop-shadow( 0 0 40px #CD0001);
+    }
+  }
 
   @keyframes pulse1 {
     0% {

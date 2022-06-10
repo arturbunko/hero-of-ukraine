@@ -3,6 +3,24 @@
     "about_us": "About us",
     "contact": "Contact"
   },
+  "Map": {
+    "Askania-nova": "Askania-nova",
+    "Kinburn Spit": "Kinburn Spit",
+    "Chornobyl Forest": {
+      "p1": "Chornobyl",
+      "p2": "Forest"
+    },
+    "Zalissya": "Zalissya",
+    "Mezinsky park": "Mezinsky park",
+    "Hetman National Park": {
+      "p1": "Hetman",
+      "p2": "National Park"
+    },
+    "National Gene Bank": {
+      "p1": "National",
+      "p2": "Gene Bank"
+    }
+  },
   "Progress": {
     "donations": "donations"
   },
@@ -24,10 +42,10 @@
     "text": "At least 219,600 people have lost their homes because of russian-ukrainian war, according to the Parliament Commissioner for Human Rights Liudmila Denisova. Moreover, this year's sowing campaign is quite extreme due to mining and combat actions. According to the Secretary-General of the United Nations Antonio Guterres, russia's war against Ukraine can throw more than 1/5 of humanity into hunger."
   },
   "Violence": {
-    "text": "Needless to say that the war is equally intense on animal and plant life. The last European steppes, Gesner's tulip fields, and unique animal populations are in the combat zone. Unfortunately, reserve and national park staff cannot perform their duties when shells explode and snipers operate.\n\nThe Chornobyl Radiation and Ecological Reserve must have borne the brunt: at least 15,000 hectares have burned down. The Hetman National Park in Trostyanets is free from occupiers, but the territory is densely mined. Experts predict the wildfires' threat to grow in May-June, yet the Russian troops have stolen the firefighting equipment. For the record, fire is the leading cause of death in wildlife.\n\nPink lakes and Red Book orchids - russia is wiping the Kinburn Spit Reserve off the face of the Earth as you read this. The National Gene Bank of Plants in Kharkiv, one of the largest seed banks in the world, was destroyed by russian air raids. The seeds of unique ancient plants are gone, and we will never be able to restore them. Bison, the largest European animal; Przewalski's horse, the only European wild horse; and the white-tailed eagle, the largest eagle in Europe - they are all in danger.",
-    "text-part-one": "Indifference is supporting",
-    "text-part-two": "violence",
-    "text-part-three": ". Our app is designed to help plants and the environment so we cannot silently observe how Russia destroys the nature of Ukraine. Join us in helping liberated natural areas to get back on track: the Chornobyl Radiation and Ecological Reserve, the Hetman and Mezyn National Parks, and the Zalissya National Park."
+    "text-part-one": "Needless to say that the war is equally intense on animal and plant life. The last European steppes, Gesner's tulip fields, and unique animal populations are in the combat zone. Unfortunately, reserve and national park staff cannot perform their duties when shells explode and snipers operate.The Chornobyl Radiation and Ecological Reserve must have borne the brunt: at least ",
+    "text-part-two": "15,000 hectares",
+    "text-part-three": "  have burned down.",
+    "text-part-four": "The Hetman National Park in Trostyanets is free from occupiers, but the territory is densely mined. Experts predict the wildfires' threat to grow in May-June, yet the Russian troops have stolen the firefighting equipment. For the record, fire is the leading cause of death in wildlife.\n\nPink lakes and Red Book orchids - russia is wiping the Kinburn Spit Reserve off the face of the Earth as you read this. The National Gene Bank of Plants in Kharkiv, one of the largest seed banks in the world, was destroyed by russian air raids. The seeds of unique ancient plants are gone, and we will never be able to restore them. Bison, the largest European animal; Przewalski's horse, the only European wild horse; and the white-tailed eagle, the largest eagle in Europe - they are all in danger."
   },
   "About Us": {
     "text": "Together, we will help Ukraine's nature recover after the war."
