@@ -17,7 +17,7 @@ export const HelpUs = () => {
           <p>{t('text1')}</p>
           <p className="lg:mt-8 mt-4">{t('text2')}</p>
         </div>
-        <h2 className="self-start xl:text-h0 lg:text-h0Lg lg:leading-[0.8] ml-3 text-[44px] leading-[0.8] text-transparent font-kharkiv text-stroke-1.5 text-stroke-white">
+        <h2 className="self-start xl:text-h0 lg:text-h0Lg lg:leading-[0.8] ml-auto text-[44px] leading-[0.8] text-transparent font-kharkiv text-stroke-1.5 text-stroke-white">
           {t('title2')}
         </h2>
       </div>
