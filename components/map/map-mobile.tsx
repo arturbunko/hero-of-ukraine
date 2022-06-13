@@ -1,11 +1,13 @@
 import { FC } from 'react';
 import { MapCoverMobile } from './map-cover-mobile';
 import { useTranslations } from 'use-intl';
+import { useRouter } from 'next/router';
 
 export const MapMobile: FC<{ className?: string; onClick: (city: string) => () => void }> = ({
   className,
   onClick: handleClick,
 }) => {
+  const router = useRouter();
   const t = useTranslations('Map');
 
   return (
@@ -18,7 +20,11 @@ export const MapMobile: FC<{ className?: string; onClick: (city: string) => () =
         <circle id="cored" cx="247" cy="32" r="6" />
       </g>
       <g className="map-dots" onClick={handleClick('Chornobyl Forest')}>
-        <text x="101" y="70" className="font-mariupol text-[10px] uppercase fill-white">
+        <text
+          x={router.locale === 'ua' ? '130' : '101'}
+          y="70"
+          className="font-mariupol text-[10px] uppercase fill-white"
+        >
           {t('Chornobyl Forest.p1')} {t('Chornobyl Forest.p2')}
         </text>
         <circle id="radar" cx="186" cy="51" r="14" />
