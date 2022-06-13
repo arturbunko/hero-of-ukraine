@@ -30,7 +30,7 @@ export const Predict = () => {
           height={400}
           loading="lazy"
         />
-        <p className="lg:text-body text-bodyMob text-white self-end lg:w-[472px] w-full">
+        <p className="lg:text-body text-bodyMob text-white self-end lg:w-[472px] lg:mt-0 mt-2 w-full">
           {t('text')}
         </p>
       </div>
