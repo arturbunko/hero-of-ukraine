@@ -7,17 +7,12 @@ import { ImagePath } from '../image-path/image-path';
 const LanguageDropdown = () => {
   const router = useRouter();
   const [isOpened, setIsOpened] = useState(false);
-  const [activeLanguage, setActiveLanguage] = useState<typeof languages[0]>(() => {
-    if (typeof window === 'undefined') return languages[0];
-    const lang = localStorage.getItem('language');
-    return lang ? JSON.parse(lang) : languages[0];
-  });
+  const [activeLanguage, setActiveLanguage] = useState<typeof languages[0]>(languages[0]);
 
   useEffect(() => {
-    const lang = localStorage.getItem('language');
-    if (lang) {
-      router.push('/', '/', { locale: JSON.parse(lang).prefix });
-    }
+    const { locale } = router;
+
+    setActiveLanguage(languages.find((lang) => lang.prefix === locale)!);
   }, []);
 
   const handleLanguageChoice = (prefix: string) => () => {
@@ -25,7 +20,6 @@ const LanguageDropdown = () => {
 
     setActiveLanguage(chosenLanguage);
     setIsOpened(false);
-    localStorage.setItem('language', JSON.stringify(chosenLanguage, null, 2));
 
     router.push('/', '/', { locale: prefix });
   };
