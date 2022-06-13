@@ -12,7 +12,7 @@ export const WantToHelp = () => {
       <h2
         className={[
           'font-kharkiv lg:text-h2 text-[56px] mix-blend-overlay tracking-tighter xl:mb-10 lg:mb-10',
-          isUkrainian ? 'xl:text-[110px]' : 'xl:text-h0',
+          isUkrainian ? 'xl:text-[110px] xl:leading-[140%]' : 'xl:text-h0',
         ].join(' ')}
       >
         {t('Want to help')}
@@ -21,7 +21,7 @@ export const WantToHelp = () => {
         className={[
           'relative font-kharkiv lg:text-h2 text-[56px] bg-gradient-to-r from-blue to-yellow bg-clip-text text-fill-transparent cursor-pointer',
           'hover:before:absolute hover:before:bottom-0 hover:before:left-[15%] hover:before:border-2 hover:before:border-arrow hover:before:w-full',
-          isUkrainian ? 'xl:text-[110px]' : 'xl:text-h0',
+          isUkrainian ? 'xl:text-[110px] xl:leading-[140%]' : 'xl:text-h0',
         ].join(' ')}
       >
         {t('Donate Now')}
