@@ -3,12 +3,16 @@ import { useTranslations } from 'use-intl';
 
 import useMediaQuery from '../../hooks/useMediaQuery';
 import { MapCoverDesktop } from './map-cover-desktop';
+import { useRouter } from 'next/router';
 
 export const MapDesktop: FC<{ className?: string; onClick: (city: string) => () => void }> = ({
   className,
   onClick,
 }) => {
+  const router = useRouter();
   const t = useTranslations('Map');
+
+  const isUkrainian = router.locale === 'ua';
 
   return (
     <MapCoverDesktop className={className}>
@@ -27,12 +31,21 @@ export const MapDesktop: FC<{ className?: string; onClick: (city: string) => () 
         <circle id="cored" cx="538" cy="527" r="6" />
       </g>
       <g className="map-dots" onClick={onClick('Chornobyl Forest')}>
-        <text x="435" y="130" className="font-mariupol text-bodyMob uppercase fill-white">
-          {t('Chornobyl Forest.p1')}
-        </text>
-        <text x="435" y="152" className="font-mariupol text-bodyMob uppercase fill-white">
-          {t('Chornobyl Forest.p2')}
-        </text>
+        {isUkrainian ? (
+          <text x="435" y="130" className="font-mariupol text-bodyMob uppercase fill-white">
+            {t('Chornobyl Forest.p1')} {t('Chornobyl Forest.p2')}
+          </text>
+        ) : (
+          <>
+            <text x="435" y="130" className="font-mariupol text-bodyMob uppercase fill-white">
+              {t('Chornobyl Forest.p1')}
+            </text>
+            <text x="435" y="152" className="font-mariupol text-bodyMob uppercase fill-white">
+              {t('Chornobyl Forest.p2')}
+            </text>
+          </>
+        )}
+
         <circle id="radar" cx="463" cy="106" r="16" />
         <circle id="cored" cx="463" cy="106" r="6" />
       </g>
