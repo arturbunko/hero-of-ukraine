@@ -135,6 +135,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
+        root: 'url("../public/background.png")',
         'title-background': 'url("../public/title-image.svg")',
         'ukraine-emblem': 'url("../public/Emblem.svg")',
         'arrow-left': 'url("../public/Arrow Left.png")',
