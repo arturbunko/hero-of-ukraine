@@ -1,11 +1,13 @@
-
-const isDev = process.env.NODE_ENV === "development";
+const isDev = process.env.NODE_ENV === 'development';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   i18n: {
     locales: ['en', 'ua'],
     defaultLocale: 'en',
+  },
+  images: {
+    domains: ['strapi.myplantin.com'],
   },
   reactStrictMode: true,
   basePath: isDev ? '' : '/hero-of-ukraine',

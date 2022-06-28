@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
 import { FC, ReactNode } from 'react';
+import { motion } from 'framer-motion';
+
 import { OrientationObserver } from '../orientation-observer/orientation-observer';
 
 const variants = {

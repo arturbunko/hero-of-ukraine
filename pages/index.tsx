@@ -41,8 +41,8 @@ const Home: NextPage = () => {
             loading="lazy"
           />
           <ImagePath
-            src="/Depositphotos_563061124_S 3.jpg"
-            blurDataURL="/Depositphotos_563061124_S 3.jpg"
+            src="/Depositphotos_563061124_S 3.png"
+            blurDataURL="/Depositphotos_563061124_S 3.png"
             placeholder="blur"
             layout="raw"
             width={400}

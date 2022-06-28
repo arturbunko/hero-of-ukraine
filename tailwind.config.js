@@ -149,6 +149,7 @@ module.exports = {
       linearBorderGradients: ({ theme }) => ({
         colors: {
           'blue-yellow': ['#416C9F', '#C9BC5F'],
+          'dark-transparent': ['#00000033', '#00000000'],
         },
       }),
     },

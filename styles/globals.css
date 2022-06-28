@@ -46,6 +46,14 @@
     border-image: linear-gradient(to right, #416C9F, #C9BC5F) 1;
   }
 
+  .image-war {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .image-peace {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%)
+  }
+
   .button-gradient {
     @apply relative text-white p-5 h-16 border-before-gradient before:content-[''] after:absolute after:w-full after:h-full after:left-3 after:top-1.5 after:border-2 after:border-white after:skew-x-20 lg:w-[234px] w-[178px]
   }

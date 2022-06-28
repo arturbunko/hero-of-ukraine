@@ -10,6 +10,8 @@ const Map: FC<{ className?: string }> = ({ className }) => {
   const router = useRouter();
 
   const handleMapClicked = (city: string) => () => {
+    localStorage.setItem('hou_city', city);
+
     router.push(`/city/${city}`);
   };
 
