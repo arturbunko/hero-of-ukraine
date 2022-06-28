@@ -10,9 +10,11 @@ import { BackButton } from '../../components/back-button/back-button';
 import { ButtonFlat } from '../../components/button-flat/button-flat';
 import { WantToHelp } from '../../components/want-to-help/want-to-help';
 import { Background } from '../../components/city-background/background';
+import { useTranslations } from 'use-intl';
 
 const City: FC<typeof Places['0']['props']> = ({ images, heading, path, next, prev }) => {
   const [placePosition, setPlacePosition] = useState(1);
+  const t = useTranslations('Places');
 
   useEffect(() => {
     let initialPlace = localStorage.getItem('hou_city');
@@ -33,8 +35,8 @@ const City: FC<typeof Places['0']['props']> = ({ images, heading, path, next, pr
           <div className="flex flex-col items-center h-full p-6">
             <BackButton />
             <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-[96px] m-auto h-fit items-center justify-between h-full m-auto">
-              <h1 className="lg:text-h1 text-h2Mob text-white lg:leading-none leading-[62px] font-kharkiv max-w-md leading-tight z-10">
-                {heading}.
+              <h1 className="lg:text-h2 text-h2Mob text-white lg:leading-none leading-[62px] font-kharkiv max-w-md leading-tight break-words z-10">
+                {t(path as any)}.
               </h1>
               <p className="lg:text-body text-bodyMob z-10">
                 Papaver is a genus of 70–100 species of frost-tolerant annuals, biennials, and

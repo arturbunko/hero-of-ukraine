@@ -9,12 +9,6 @@ export const getPlacePosition = (initial: string, current: string): number => {
 
   if (isCurrent) return 1;
 
-  console.log({
-    currentIndex,
-    initialIndex,
-    placesCount,
-  });
-
   if (currentIndex > initialIndex) {
     return placesCount - (placesCount - currentIndex + 2);
   }

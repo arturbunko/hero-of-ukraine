@@ -59,5 +59,14 @@
     "privacy": "Privacy Policy",
     "subscription": "Subscription Policy",
     "reserved": "All rights reserved"
+  },
+  "Places": {
+    "askania-nova": "Askania-nova",
+    "kinburn-spit": "Kinburn Spit",
+    "chornobyl-forest": "Chornobyl Forest",
+    "zalissya": "Zalissya",
+    "mezinsky-park": "Mezinsky park",
+    "hetman-park": "Hetman National Park",
+    "gene-bank": "National Gene Bank"
   }
 }
