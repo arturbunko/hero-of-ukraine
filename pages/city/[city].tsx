@@ -35,7 +35,7 @@ const City: FC<typeof Places['0']['props']> = ({ images, heading, path, next, pr
           <div className="flex flex-col items-center h-full p-6">
             <BackButton />
             <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-[96px] m-auto h-fit items-center justify-between h-full m-auto">
-              <h1 className="lg:text-h2 text-[32px] text-white lg:leading-none leading-normal font-kharkiv max-w-md break-words z-10">
+              <h1 className="lg:text-h2 text-[32px] text-white lg:leading-none leading-normal font-kharkiv max-w-md z-10">
                 {t(path as any)}.
               </h1>
               <p className="lg:text-body text-bodyMob z-10">
