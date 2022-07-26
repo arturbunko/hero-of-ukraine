@@ -11,6 +11,7 @@ export const BecameAHero = () => {
         src="https://strapi.myplantin.com/image_1_00bb15dd94.webp"
         width={566}
         height={720}
+        external
       />
       <p className="self-end lg:w-1/2 w-full lg:p-16 p-4 bg-white-05 bg-blend-overlay lg:text-body text-12 text-center">
         {t('text')}

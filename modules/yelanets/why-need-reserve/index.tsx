@@ -12,6 +12,7 @@ export const WhyNeedReserve = () => {
         layout="raw"
         width={962}
         height={696}
+        external
       />
       <div className="self-end">
         <p className="lg:text-body text-12 lg:mb-11 mb-4">{t('text1')}</p>
