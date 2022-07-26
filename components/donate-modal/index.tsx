@@ -51,6 +51,7 @@ export const DonateModal = ({ onClose, show }: { show: boolean; onClose: () => v
         style={{
           background: 'rgba(31, 31, 39, 0.4)',
           backdropFilter: 'blur(24px)',
+          WebkitBackdropFilter: 'blur(24px)',
         }}
       >
         <div
