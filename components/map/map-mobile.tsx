@@ -51,6 +51,13 @@ export const MapMobile: FC<{ className?: string; onClick: (city: string) => () =
         <circle id="radar" cx="353" cy="108" r="14" />
         <circle id="cored" cx="353" cy="108" r="6" />
       </g>
+      <g className="map-dots" onClick={handleClick('yelanets-steppe')}>
+        <text x="200" y="160" className="font-mariupol text-[10px] uppercase fill-white">
+          {t('Yelanets Steppe')}
+        </text>
+        <circle id="radar" cx="230" cy="180" r="16" />
+        <circle className="glowing-button-red" id="cored" cx="230" cy="180" r="6" />
+      </g>
       <g className="map-dots" onClick={handleClick('askania-nova')}>
         <text x="251" y="199" className="font-mariupol text-[10px] uppercase fill-white">
           {t('Askania-nova')}

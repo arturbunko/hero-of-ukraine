@@ -16,6 +16,13 @@ export const MapDesktop: FC<{ className?: string; onClick: (city: string) => () 
 
   return (
     <MapCoverDesktop className={className}>
+      <g className="map-dots" onClick={onClick('yelanets-steppe')}>
+        <text x="500" y="400" className="font-mariupol text-bodyMob uppercase fill-white">
+          {t('Yelanets Steppe')}
+        </text>
+        <circle id="radar" cx="560" cy="430" r="16" />
+        <circle className="glowing-button-red" id="cored" cx="560" cy="430" r="6" />
+      </g>
       <g className="map-dots" onClick={onClick('askania-nova')}>
         <text x="624" y="514" className="font-mariupol text-bodyMob uppercase fill-white">
           {t('Askania-nova')}

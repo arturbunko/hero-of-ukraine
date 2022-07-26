@@ -5,6 +5,8 @@ export const getPlacePosition = (initial: string, current: string): number => {
   const initialIndex = Places.findIndex((value) => value.path === initial);
   const currentIndex = Places.findIndex((value) => value.path === current);
 
+  console.log({ placesCount, initialIndex, currentIndex });
+
   const isCurrent = initialIndex === currentIndex;
 
   if (isCurrent) return 1;

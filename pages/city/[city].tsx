@@ -1,8 +1,10 @@
 import type { GetStaticPropsContext } from 'next';
 import { FC, useEffect, useState } from 'react';
+import { useTranslations } from 'use-intl';
 import Link from 'next/link';
 
 import { Places } from '../../constants/places';
+import { Yelanets } from '../../modules/yelanets';
 import { Footer } from '../../components/footer/footer';
 import { Layout } from '../../components/layout/layout';
 import { getPlacePosition } from '../../utils/getPlacePosition';
@@ -10,11 +12,11 @@ import { BackButton } from '../../components/back-button/back-button';
 import { ButtonFlat } from '../../components/button-flat/button-flat';
 import { WantToHelp } from '../../components/want-to-help/want-to-help';
 import { Background } from '../../components/city-background/background';
-import { useTranslations } from 'use-intl';
+import { DonateModalProvider } from '../../components/donate-modal/context';
 
-const City: FC<typeof Places['0']['props']> = ({ images, heading, path, next, prev }) => {
+const City: FC<typeof Places['0']['props']> = ({ images, path, next, prev }) => {
   const [placePosition, setPlacePosition] = useState(1);
-  const t = useTranslations('Places');
+  const t = useTranslations(path);
 
   useEffect(() => {
     let initialPlace = localStorage.getItem('hou_city');
@@ -34,18 +36,16 @@ const City: FC<typeof Places['0']['props']> = ({ images, heading, path, next, pr
           <Background images={images} />
           <div className="flex flex-col items-center h-full p-6">
             <BackButton />
-            <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-[96px] m-auto h-fit items-center justify-between h-full m-auto">
+            <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-[96px] h-fit items-center justify-between m-auto">
               <h1 className="lg:text-h2 text-[32px] text-white lg:leading-none leading-normal font-kharkiv max-w-md z-10">
-                {t(path as any)}.
+                {t('label')}.
               </h1>
-              <p className="lg:text-body text-bodyMob z-10">
-                Papaver is a genus of 70–100 species of frost-tolerant annuals, biennials, and
-                perennials native to temperate and cold regions of Eurasia, Africa and North
-                America. It is the type genus of the poppy family, Papaveraceae.
-              </p>
-              <ButtonFlat label="Support" className="lg:visible self-start invisible" />
+              <p className="lg:text-body text-bodyMob z-10">{t('text')}</p>
+              <DonateModalProvider>
+                <ButtonFlat label="Support" className="lg:visible self-start invisible" />
+              </DonateModalProvider>
               <div className="flex justify-between items-center self-start">
-                <span className="lg:text-h2 text-h2Mob leading-[42px] tracking-tighter leading-none mix-blend-overlay">
+                <span className="lg:text-h2 text-h2Mob leading-[42px] tracking-tighter mix-blend-overlay">
                   {placePosition}/{Places.length}
                 </span>
                 <div className="z-10">
@@ -60,6 +60,7 @@ const City: FC<typeof Places['0']['props']> = ({ images, heading, path, next, pr
             </div>
           </div>
         </div>
+        {path === 'yelanets-steppe' && <Yelanets />}
         <section className="px-6">
           <WantToHelp />
           <Footer />
@@ -84,7 +85,7 @@ export async function getStaticProps({
   return {
     props: {
       ...place.props,
-      intl: (await import(`../../intl/${locale}.json`)).default,
+      intl: (await import(`../../intl/${locale}/places.json`)).default,
     },
   };
 }

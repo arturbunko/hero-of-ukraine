@@ -10,6 +10,7 @@
     margin: 0;
     font-family: 'Mariupol', sans-serif;
     background: #1f1f27 url("../public/background.png") repeat;
+    -webkit-tap-highlight-color: transparent;
     color: white;
   }
 
@@ -215,3 +216,13 @@
   }
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

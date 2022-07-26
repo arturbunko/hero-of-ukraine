@@ -1,8 +1,10 @@
 import { useTranslations } from 'use-intl';
 import { useRouter } from 'next/router';
+import { useDonateModal } from '../donate-modal/context';
 
 export const WantToHelp = () => {
   const router = useRouter();
+  const { setShow } = useDonateModal();
   const t = useTranslations('Want to help');
 
   const isUkrainian = router.locale === 'ua';
@@ -17,7 +19,8 @@ export const WantToHelp = () => {
       >
         {t('Want to help')}
       </h2>
-      <a
+      <button
+        onClick={setShow}
         className={[
           'relative font-kharkiv lg:text-h2 text-[56px] bg-gradient-to-r from-blue to-yellow bg-clip-text text-fill-transparent cursor-pointer',
           'hover:before:absolute hover:before:bottom-0 hover:before:left-[15%] hover:before:border-2 hover:before:border-arrow hover:before:w-full',
@@ -25,7 +28,7 @@ export const WantToHelp = () => {
         ].join(' ')}
       >
         {t('Donate Now')}
-      </a>
+      </button>
     </section>
   );
 };

@@ -1,5 +1,9 @@
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './modules/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     colors: {
       noise: '#1f1f27',
@@ -7,6 +11,7 @@ module.exports = {
       blue: '#416C9F',
       yellow: '#C9BC5F',
       white: '#ffffff',
+      'white-05': '#ffffff05',
       'white-20': '#ffffff33',
       'white-60': '#ffffff99',
       black: '#222222',
@@ -128,6 +133,9 @@ module.exports = {
           lineHeight: '140%',
         },
       ],
+      12: '12px',
+      24: '24px',
+      16: '16px',
     },
     fontFamily: {
       kharkiv: ['Kharkiv Tone', 'sans-serif'],

@@ -1,0 +1,76 @@
+{
+  "Header": {
+    "about_us": "About us",
+    "contact": "Contact"
+  },
+  "Map": {
+    "Yelanets Steppe": "Yelanets Steppe",
+    "Askania-nova": "Askania-nova",
+    "Kinburn Spit": "Kinburn Spit",
+    "Chornobyl Forest": {
+      "p1": "Chornobyl",
+      "p2": "Forest"
+    },
+    "Zalissya": "Zalissya",
+    "Mezinsky park": "Mezinsky park",
+    "Hetman National Park": {
+      "p1": "Hetman",
+      "p2": "National Park"
+    },
+    "National Gene Bank": {
+      "p1": "National",
+      "p2": "Gene Bank"
+    }
+  },
+  "Progress": {
+    "donations": "donations"
+  },
+  "Heading": {
+    "title": "war kills nature.",
+    "description": "Russia is committing numerous war crimes in Ukraine, including crimes against the environment, also known as ecocides. More than 200 ecocides have been documented since the start of the full-scale invasion.",
+    "clarification": "According to the Ukrainian Environmental Protection Group (UNCG), 44% of Ukraine's most valuable protected areas are engulfed in war."
+  },
+  "Support Button": {
+    "label": "Support"
+  },
+  "Help Us": {
+    "title1": "Help us save",
+    "title2": "the nature",
+    "text1": "At least 219,600 people have lost their homes because of russian-ukrainian war, according to the Parliament Commissioner for Human Rights Liudmila Denisova. Moreover, this year's sowing campaign is quite extreme due to mining and combat actions. According to the Secretary-General of the United Nations Antonio Guterres, russia's war against Ukraine can throw more than 1/5 of humanity into hunger.",
+    "text2": "Indifference is supporting violence. Our app is designed to help plants and the environment so we cannot silently observe how Russia destroys the nature of Ukraine. Join us in helping liberated Yelanets Steppe Nature Reserve natural area to get back on track."
+  },
+  "Predict": {
+    "text": "Needless to say that the war is equally intense on animal and plant life. The last European steppes, Gesner's tulip fields, and unique animal populations are in the combat zone."
+  },
+  "Violence": {
+    "text-part-one": "We are asking you to become a hero for Ukraine. This time you can help to save the planet for real. Ukraine requires heroes, as much as Ukrainian nature requires your donations. To become a hero for Ukraine, please donate on our platform. We'll give all the funds to the Ukrainian Nature Conservation Group",
+    "text-part-two": " to help save",
+    "text-part-three": " Yelanets Steppe Nature Reserve.",
+    "text-part-four": "Ukraine feeds one-fifth of the world population. Its citizens fearlessly continue the sowing even in temporarily occupied territories. Inhabitant of Henichesk, Kherson region, recommended an occupant to put Sunflower seeds in his pockets. It was the only way he could be helpful to the Ukrainian land. The flower would grow from his pockets when he lies on the chornozem."
+  },
+  "About Us": {
+    "text": "Together, we will help Ukraine's nature recover after the war."
+  },
+  "Want to help": {
+    "Want to help": "Want to help?",
+    "Donate Now": "Donate Now."
+  },
+  "Footer": {
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "subscription": "Subscription Policy",
+    "reserved": "All rights reserved"
+  },
+  "Places": {
+    "askania-nova": "Askania-nova",
+    "kinburn-spit": "Kinburn Spit",
+    "chornobyl-forest": "Chornobyl Forest",
+    "zalissya": "Zalissya",
+    "mezinsky-park": "Mezinsky park",
+    "hetman-park": "Hetman National Park",
+    "gene-bank": "National Gene Bank"
+  },
+  "kinburn-spit": {
+    "text": "Kinburn Spit Reserve is in the combat zone right now. Russian troops are trying to make Red List orchids and Pink lakes disappear from the European map. Ukraine is also home to a lot of endangered animals. A giant eagle in Europe —  the White-tailed Eagle, the only European wild horse —  Przewalski's Horse and the most giant European animal —  Bison suffer from shelling and occupation.  "
+  }
+}
