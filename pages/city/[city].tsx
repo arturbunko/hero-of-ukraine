@@ -31,41 +31,41 @@ const City: FC<typeof Places['0']['props']> = ({ images, path, next, prev }) => 
 
   return (
     <Layout>
-      <section>
-        <div className="relative flex flex-col items-center w-full h-screen">
-          <Background images={images} />
-          <div className="flex flex-col items-center h-full p-6">
-            <BackButton />
-            <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-[96px] h-fit items-center justify-between m-auto">
-              <h1 className="lg:text-h2 text-[32px] text-white lg:leading-none leading-normal font-kharkiv max-w-md z-10">
-                {t('label')}.
-              </h1>
-              <p className="lg:text-body text-bodyMob z-10">{t('text')}</p>
-              <DonateModalProvider>
+      <DonateModalProvider>
+        <section>
+          <div className="relative flex flex-col items-center w-full h-screen">
+            <Background images={images} />
+            <div className="flex flex-col items-center h-full p-6">
+              <BackButton />
+              <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-[96px] h-fit items-center justify-between m-auto">
+                <h1 className="lg:text-h2 text-[32px] text-white lg:leading-none leading-normal font-kharkiv max-w-md z-10">
+                  {t('label')}.
+                </h1>
+                <p className="lg:text-body text-bodyMob z-10">{t('text')}</p>
                 <ButtonFlat label="Support" className="lg:visible self-start invisible" />
-              </DonateModalProvider>
-              <div className="flex justify-between items-center self-start">
-                <span className="lg:text-h2 text-h2Mob leading-[42px] tracking-tighter mix-blend-overlay">
-                  {placePosition}/{Places.length}
-                </span>
-                <div className="z-10">
-                  <Link href={prev} passHref>
-                    <button className="cursor-pointer lg:w-[62px] lg:h-[62px] w-[27px] h-[27px] bg-arrow-left hover:-translate-x-3 ease-in duration-300 hover:bg-arrow-left-active bg-no-repeat bg-contain" />
-                  </Link>
-                  <Link href={next} passHref>
-                    <button className="ml-[62px] cursor-pointer lg:w-[62px] lg:h-[62px] w-[27px] h-[27px] bg-arrow-right hover:translate-x-3 ease-in duration-300 hover:bg-arrow-right-active bg-no-repeat bg-contain" />
-                  </Link>
+                <div className="flex justify-between items-center self-start">
+                  <span className="lg:text-h2 text-h2Mob leading-[42px] tracking-tighter mix-blend-overlay">
+                    {placePosition}/{Places.length}
+                  </span>
+                  <div className="z-10">
+                    <Link href={prev} passHref>
+                      <button className="cursor-pointer lg:w-[62px] lg:h-[62px] w-[27px] h-[27px] bg-arrow-left hover:-translate-x-3 ease-in duration-300 hover:bg-arrow-left-active bg-no-repeat bg-contain" />
+                    </Link>
+                    <Link href={next} passHref>
+                      <button className="ml-[62px] cursor-pointer lg:w-[62px] lg:h-[62px] w-[27px] h-[27px] bg-arrow-right hover:translate-x-3 ease-in duration-300 hover:bg-arrow-right-active bg-no-repeat bg-contain" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {path === 'yelanets-steppe' && <Yelanets />}
-        <section className="px-6">
-          <WantToHelp />
-          <Footer />
+          {path === 'yelanets-steppe' && <Yelanets />}
+          <section className="px-6">
+            <WantToHelp />
+            <Footer />
+          </section>
         </section>
-      </section>
+      </DonateModalProvider>
     </Layout>
   );
 };
