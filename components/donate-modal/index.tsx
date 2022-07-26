@@ -58,7 +58,7 @@ export const DonateModal = ({ onClose, show }: { show: boolean; onClose: () => v
           className={clsx(
             'flex flex-col z-50 overflow-auto max-w-[480px] no-scrollbar',
             isLandscape && 'md:min-w-[480px] min-w-[480px] mt-4',
-            !isLandscape && 'md:min-w-[480px] min-w-[300px]'
+            !isLandscape && 'md:min-w-[480px] min-w-full px-4'
           )}
         >
           <button className="self-start lg:mb-8 mb-3" onClick={onClose}>

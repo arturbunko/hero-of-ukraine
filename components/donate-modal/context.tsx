@@ -6,20 +6,27 @@ const DonateModalContext = createContext({
   setShow: () => {},
 });
 
+declare global {
+  interface Window {
+    houPaypalModalOpened: boolean;
+  }
+}
+
 export const DonateModalProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [show, setShow] = useState(() => {
-    if (typeof localStorage === 'undefined') return false;
-    return localStorage.getItem('paypal-modal-opened') == 'true';
+    if (typeof window === 'undefined') return false;
+    return window.houPaypalModalOpened;
   });
 
   const onClose = useCallback(() => {
-    localStorage.setItem('paypal-modal-opened', 'false');
+    window.houPaypalModalOpened = false;
     setShow(false);
   }, []);
 
   const setShowModal = useCallback(() => {
+    window.houPaypalModalOpened = true;
+
     setShow(true);
-    localStorage.setItem('paypal-modal-opened', 'true');
   }, []);
 
   const value = useMemo(
