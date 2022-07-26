@@ -8,6 +8,8 @@ export const BecameAHero = () => {
     <section className="flex lg:gap-36 gap-8 lg:px-6 px-10 lg:mt-40 mt-16">
       <ImagePath
         className="flex-1 w-full lg:h-auto h-[375px] min-w-[392px] object-cover"
+        placeholder="blur"
+        blurDataURL="https://strapi.myplantin.com/thumbnail_image_1_00bb15dd94.webp"
         src="https://strapi.myplantin.com/image_1_00bb15dd94.webp"
         width={566}
         height={720}

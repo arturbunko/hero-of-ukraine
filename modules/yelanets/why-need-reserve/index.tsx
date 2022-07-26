@@ -8,6 +8,8 @@ export const WhyNeedReserve = () => {
     <section className="flex lg:gap-28 gap-8 lg:px-6 px-10 lg:mt-40 mt-16">
       <ImagePath
         className="w-1/2 h-auto"
+        placeholder="blur"
+        blurDataURL="https://strapi.myplantin.com/thumbnail_Depositphotos_567742266_XL_2_3d0d1a4b21.webp"
         src="https://strapi.myplantin.com/Depositphotos_567742266_XL_2_3d0d1a4b21.webp"
         layout="raw"
         width={962}
