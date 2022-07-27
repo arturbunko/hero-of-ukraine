@@ -217,6 +217,11 @@
 }
 
 @layer utilities {
+  .no-scrollbar {
+    overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  }
+
   .no-scrollbar::-webkit-scrollbar {
       display: none;
   }

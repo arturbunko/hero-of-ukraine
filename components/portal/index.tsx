@@ -1,20 +1,16 @@
 import { createPortal } from 'react-dom';
-import { ReactNode, useEffect, useRef, useState } from 'react';
+import { ReactNode, useEffect, useLayoutEffect, useState, useRef } from 'react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const selector = '#portal-container';
 
+const useIsomorphicEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect;
+
 export const Portal = ({ children }: { children: ReactNode }) => {
-  const ref = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // @ts-ignore
-    ref.current = document.querySelector(selector);
-
-    if (ref.current) {
-      disableBodyScroll(ref.current);
-    }
     setMounted(true);
 
     return () => {
@@ -23,6 +19,12 @@ export const Portal = ({ children }: { children: ReactNode }) => {
     };
   }, []);
 
+  useIsomorphicEffect(() => {
+    // @ts-ignore
+    scrollRef.current = document.getElementById('modal-content');
+    if (scrollRef.current) disableBodyScroll(scrollRef.current);
+  });
+
   // @ts-ignore
-  return mounted ? createPortal(children, ref.current) : null;
+  return mounted ? createPortal(children, document.querySelector(selector)) : null;
 };

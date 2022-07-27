@@ -47,7 +47,7 @@ export const DonateModal = ({ onClose, show }: { show: boolean; onClose: () => v
     <Portal>
       <div
         ref={element}
-        className="fixed top-0 left-0 w-screen h-full z-50 flex flex-col items-center justify-center"
+        className="fixed top-0 left-0 w-screen h-full z-50 flex flex-col items-center justify-center no-scrollbar"
         style={{
           background: 'rgba(31, 31, 39, 0.4)',
           backdropFilter: 'blur(24px)',
@@ -55,8 +55,9 @@ export const DonateModal = ({ onClose, show }: { show: boolean; onClose: () => v
         }}
       >
         <div
+          id="modal"
           className={clsx(
-            'flex flex-col z-50 overflow-auto max-w-[480px] no-scrollbar',
+            'flex flex-col z-50 max-w-[480px] no-scrollbar',
             isLandscape && 'md:min-w-[480px] min-w-[480px] mt-4',
             !isLandscape && 'md:min-w-[480px] min-w-full px-4'
           )}
@@ -77,7 +78,8 @@ export const DonateModal = ({ onClose, show }: { show: boolean; onClose: () => v
             </svg>
           </button>
           <div
-            className="lg:p-10 p-4"
+            id="modal-content"
+            className="lg:p-10 p-4 no-scrollbar"
             style={{
               display: 'flex',
               flexDirection: 'column',
