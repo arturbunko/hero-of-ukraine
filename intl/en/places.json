@@ -9,7 +9,7 @@
   },
   "gene-bank": {
     "label": "National Gene Bank",
-    "text": "National Gene Bank of Plants in Kharkiv is one of the largest seed banks in the world. Russian rockets destroyed a massive amount of the winter crops. The bank staff saved a distinctive collection of the seeds. Yet, the fields are still unmined. The National Bank also faced a lack of fuel materials.the world. Russian rockets destroyed a massive amount of the winter crops. The bank staff saved a distinctive collection of the seeds. Yet, the fields are still unmined. The National Bank also faced a lack of fuel materials. in Kharkiv is one of the largest seed banks in the world. Russian rockets destroyed a massive amount of the winter crops. The bank staff saved a distinctive collection of the seeds. Yet, the fields are still unmined. The National Bank also faced a lack of fuel materials."
+    "text": "National Gene Bank of Plants in Kharkiv is one of the largest seed banks in the world. Russian rockets destroyed a massive amount of the winter crops. The bank staff saved a distinctive collection of the seeds. Yet, the fields are still unmined. The National Bank also faced a lack of fuel materials."
   },
   "hetman-park": {
     "label": "Hetman National Park",
@@ -48,15 +48,14 @@
     "option2": "binoculars;",
     "option3": "camera traps;",
     "option4": "solar stations;",
-    "option5": "solar stations;",
-    "option6": "an emergency transport;",
-    "option7": "motorcycles for the state security service;",
-    "option8": "frameless hangar for storing fodder;",
-    "option9": "tractor with the trailer equipment to create mineralized strips;",
-    "option10": "a kit for conduction on how endangered Steppe Marmot reproduces;",
-    "option11": "containers for watering Bisons and a strong fence for the animals not to escape;",
-    "option12": "food and water for the maintenance of American Bisons and other threatened species.aks;",
-    "options": "12"
+    "option5": "an emergency transport;",
+    "option6": "motorcycles for the state security service;",
+    "option7": "frameless hangar for storing fodder;",
+    "option8": "tractor with the trailer equipment to create mineralized strips;",
+    "option9": "a kit for conduction on how endangered Steppe Marmot reproduces;",
+    "option10": "containers for watering Bisons and a strong fence for the animals not to escape;",
+    "option11": "food and water for the maintenance of American Bisons and other threatened species.aks;",
+    "options": "11"
   },
   "BecameAHero": {
     "text": "Despite the war, Yelanets Steppe Nature Reserve employees monitor the territory and care for the endangered animals. Reserve hosted internally displaced people and their beloved pets in the administrative building. The workers' research the flora and fauna of the Ukrainian steppes. The Yelanets Steppe Nature Reserve is a treasure gifted by nature, a symbol of freedom and defiance of Ukrainian civilians, and a source of inspiration for all Ukrainians. Employees of the Reserve now face a wartime challenge — to preserve unique Ukrainian steppes for future generations. Help us save imperiled species like American Bison and Steppe Marmot. Become a hero for Ukraine."

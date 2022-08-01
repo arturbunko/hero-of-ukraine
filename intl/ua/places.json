@@ -1,77 +1,76 @@
 {
   "askania-nova": {
-    "label": "Askania-nova",
-    "text": "Russian forces occupy the Askania Nova Nature Reserve in the Kherson region from the first day of the full-scale war. It has been for more than five months now. This steppe survived two world wars in the last century. The animals and staff have run out of food and medicines these days. It's simply impossible to deliver the supplies to the reserve. Moreover, there is no possibility of evacuating employees and endangered animals. The Ascania Nova has no fodder, fuel, agricultural machinery, or other necessary resources. The reserve staff cannot use provided funds because the bank transactions are currently blocked because of occupation."
+    "label": "Асканія Нова",
+    "text": "З першого дня повномасштабної війни російські війська окупували заповідник Асканія-Нова в Херсонській області. Цей степ пережив дві світові війни минулого століття! За ці дні окупації у тварин та персоналу закінчилися продукти та ліки. Доставити запаси в заповідник просто неможливо. Крім того, немає можливості евакуювати співробітників і тварин, які знаходяться під загрозою зникнення. У «Асканії-Новій» немає кормів, палива, сільськогосподарської техніки та інших необхідних ресурсів. Співробітники резерву не можуть використати задоначені кошти, оскільки всі банківські операції наразі заблоковані через окупацію."
   },
   "chornobyl-forest": {
-    "label": "Chornobyl Forest",
-    "text": "Chornobyl Forest in the Kyiv Region is the most polluted with radiation area in Europe. Russians had been occupying this territory for more than a month. Russians dug the trenches and inhaled the infected dust of the Red Forest in this area. Now the soil is contaminated with radiation there. The forest staff prepared for the occupation of Chornobyl in advance — they brought bags for barricades not to let russians inside the woodland. The troops of the occupants left their positions in a hurry — they left behind boots, malnutrition, and piles of garbage. Russians also burnt Red Forest trees. Now radiation-infected animals are running around the former enemy positions."
+    "label": "Чорнобильский ліс",
+    "text": "Чорнобильський ліс на Київщині є найбільш забрудненою радіацією територією Європи. Росіяни окупували цю територію більше місяця тому. У цьому районі вони рили траншеї та вдихали заражений радіацією пил “Рудого лісу”. До окупації Чорнобиля лісники готувалися заздалегідь — наприклад, будували барикади, щоб не пропустити ворога у ліс. Залишаючи свої позиції, російські війська залишили купу сміття і особистих речей, а також повипалювали дерева у Рудому лісі."
   },
   "gene-bank": {
-    "label": "National Gene Bank",
-    "text": "National Gene Bank of Plants in Kharkiv is one of the largest seed banks in the world. Russian rockets destroyed a massive amount of the winter crops. The bank staff saved a distinctive collection of the seeds. Yet, the fields are still unmined. The National Bank also faced a lack of fuel materials.the world. Russian rockets destroyed a massive amount of the winter crops. The bank staff saved a distinctive collection of the seeds. Yet, the fields are still unmined. The National Bank also faced a lack of fuel materials. in Kharkiv is one of the largest seed banks in the world. Russian rockets destroyed a massive amount of the winter crops. The bank staff saved a distinctive collection of the seeds. Yet, the fields are still unmined. The National Bank also faced a lack of fuel materials."
+    "label": "Національний генетичний банк",
+    "text": "Національний генетичний банк рослин у Харкові є одним із найбільших банків насіння у світі. І хоча російські ракети знищили величезну кількість озимих культур, співробітникам банку вдалося зберегти частину колекції. Проте поля досі не розміновані повністю."
   },
   "hetman-park": {
-    "label": "Hetman National Park",
-    "text": "Mines crowded the territory of Hetman National Park in the Sumy region in the north of Ukraine. Russians stole all the firefighting equipment. It closes out, saving the natural areas from fires predicted at the summer's end. If we don't hold it, death in wildlife will spread more."
+    "label": "Гетьманський національний парк",
+    "text": "Територія Гетьманського національного парку в Сумській області на півночі України завалена мінами. Ворог викрав все протипожежне обладнання, тому парк закривається, рятуючи природні території від прогнозованих на кінець літа пожеж. Якщо не вберегти парк від них, кількість смертей у дикій природі зросте до неймовірних масштабів."
   },
   "kinburn-spit": {
-    "label": "Kinburn Spit",
-    "text": "Kinburn Spit Reserve is in the combat zone right now. Russian troops are trying to make Red List orchids and Pink lakes disappear from the European map. Ukraine is also home to a lot of endangered animals. A giant eagle in Europe —  the White-tailed Eagle, the only European wild horse —  Przewalski's Horse and the most giant European animal —  Bison suffer from shelling and occupation."
+    "label": "Кінбурська коса",
+    "text": "Наразі в окупації також знаходиться заповідник 'Кінбурнська коса'. Російські війська нищать види орхідей та рожеві озера, які внесені до Червоної книги. Крім цього, Україна також є домом для багатьох видів тварин, що зникають. Від обстрілів та окупації потерпають зокрема гігантський орел Європи — орлан-білохвіст, єдиний європейський дикий кінь — кінь Пржевальського та найбільша тварина Європи — зубр."
   },
   "mezinsky-park": {
-    "label": "Mezinsky park",
-    "text": "Russian troops had been occupying Mezinsky National Nature Park in the Chernigiv region for over a month. The park employees took down all the geographical signs in the area and made Molotov cocktails to resist the military forces. provided the staff with one machine gun and a couple of assault rifles to defend themselves. Mezynsky natural area was booked for visitors till September before the beginning of the full-scale war. Now the park starts to receive guests again."
+    "label": "Мезинський парк",
+    "text": "Вже понад місяць перебуває в окупації Мезинський національний природний парк у Чернігівській області. Співробітники парку зняли всі географічні показчики на території та зробили запас коктейлів Молотова, щоб протистояти ворогу. Також в особового складу є один кулемет і кілька автоматів для самозахисту. До початку повномасштабної війни Мезинський парк не мав вільних дат для відвідування – все було розписано на кілька місяців вперед."
   },
   "zalissya": {
-    "label": "Zalissya",
-    "text": "Ukrainian military forces released Zalissya National Nature Park in the Kyiv region from russian occupation in March. This area had no electricity or gas, so the park staff needed to cook food on fire in the yard. Forest remains partly dangerous because of the ammunition remnants. Now Zalissya National Park has recovered from russian occupation and has begun to do excursions for the visitors in the safe parts of the area."
+    "label": "Залісся",
+    "text": "У березні українські військові звільнили від російської окупації національний природний парк «Залісся» в Київській області. У цьому районі не було ні електрики, ні газу, тому співробітникам парку довелося готувати їжу на вогні у дворі. Ліс залишається частково небезпечним через залишки боєприпасів. Зараз Заліський національний парк потрохи оговтується від російської окупації і починає проводити екскурсії для відвідувачів безпечними частинами території."
   },
   "yelanets-steppe": {
-    "text": "Meet Yelanets Steppe Nature Reserve, one of the last European steppes. We can help it right now because russian troops do not occupy it currently.",
-    "label": "Yelanets Steppe"
+    "text": "Хочемо познайомити тебе з Єланецьким степом – одним з найбільш старовинних європейських заповідників. Поки російські війська ще не окупували степ, разом ми можемо йому допомогти.",
+    "label": "Єланецький степ"
   },
   "YelanetsViolence": {
-    "text-part-one": "Yelanets Steppe Nature Reserve has existed for 26 years. It is located is the Mykolaiv region, right near the frontline. The danger of occupation of this territory remains high. Hostilities occurred right near its location in March, right after the ",
-    "text-part-two": " full-scale war",
-    "text-part-three": " started.",
-    "text-part-four": "Frightened by the loud explosions, American Bisons tore the net of the enclosure and ran outside. The employees risked their lives and brought Bisons back home. The staff of the Reserve patched the hole and provided endangered animals with the food and water they needed. Fortunately, everyone survived."
+    "text-part-one": "Заповідник «Єланецький степ» існує вже 26 років. Він розташований у Миколаївській області, безпосередньо біля лінії фронту. Небезпека окупації цієї території залишається високою. В березні, відразу після початку ",
+    "text-part-two": " повномасштабної війни, ",
+    "text-part-three": " прямо біля Єланецького степу точилися бойові дії",
+    "text-part-four": "Злякавшись гучних вибухів, американські бізони порвали сітку вольєра та вибігли на вулицю. Співробітники, ризикуючи життям, повернули бізонів додому, залатали дірку та забезпечили зникаючих тварин необхідною їжею та водою. На щастя, всі залишилися живі."
   },
   "WhyNeedReserve": {
-    "text1": "The constant hum of russian rockets and planes makes animals frightened and angry. That is why employees of the Reserve need to replace the netting and part of the fence posts. Old troughs leak, so it makes providing animals with water almost impossible.",
-    "text2": "A large-scale fire occurred in the territory of the Reserve in spring. Employees and local citizens extinguished the arson. As a result, 135 hectares (0,6 mi²) of the Reserve have burned down. The most likely cause of the fire was enemy troops' use of signal rockets. A spark from a russian downed missile or a drone is enough to set the arid steppe on fire. The State Emergency Service of Ukraine has already found these types of military equipment in the surroundings. They also discovered an anti-tank mine on the road close to the Reserve."
+    "text1": "Звуки російських ракет і літаків лякають тварин, тому працівники Заповідника просять про допомогу: потрібно більше коштів, аби укріпити сітки та огорожу. Старі корита для пиття протікають, тому важко ще й забезпечити тварин якісною питною водою.",
+    "text2": "Навесні на території заповідника сталася масштабна пожежа. Співробітники та місцеві жителі ліквідували підпал, хоча результаті вигоріло 135 га території. Причиною пожежі стало використання ворожими військами сигнальних ракет. Іскри російської збитої ракети чи безпілотника достатньо, щоб спалахнув сухий, практично безводний степ. Державна служба України з надзвичайних ситуацій вже виявила на околицях заповідника ворожу військову техніку і протитанкову міну."
   },
   "Affirms": {
-    "title": "Galyna Drabyniuk, Director of the Reserve, affirms that the territory of the Steppe remains unmined.",
-    "list": "During wartime, the Natural Reserve needs:",
-    "option1": "firebreaks;",
-    "option2": "binoculars;",
-    "option3": "camera traps;",
-    "option4": "solar stations;",
-    "option5": "solar stations;",
-    "option6": "an emergency transport;",
-    "option7": "motorcycles for the state security service;",
-    "option8": "frameless hangar for storing fodder;",
-    "option9": "tractor with the trailer equipment to create mineralized strips;",
-    "option10": "a kit for conduction on how endangered Steppe Marmot reproduces;",
-    "option11": "containers for watering Bisons and a strong fence for the animals not to escape;",
-    "option12": "food and water for the maintenance of American Bisons and other threatened species.aks;",
-    "options": "12"
+    "title": "Директорка заповідника Галина Драбинюк стверджує, що територія степу залишається незамінованою.",
+    "list": "Тим не менше, у воєнний час заповіднику необхідні деякі ресурси:",
+    "option1": "протипожежні засоби;",
+    "option2": "біноклі;",
+    "option3": "фотопастки;",
+    "option4": "сонячні станції;",
+    "option5": "аварійний транспорт;",
+    "option6": "мотоцикли для державної служби охорони;",
+    "option7": "безкаркасний ангар для зберігання кормів;",
+    "option8": "трактор з причіпним обладнанням для створення мінералізованих смуг;",
+    "option9": "набір для ознайомлення з тим, як розмножується зникаючий степовий бабак;",
+    "option10": "ємності для водопою зубрів і міцна огорожа, щоб тварини не втекли;",
+    "option11": "їжа та вода для утримання американських бізонів та інших видів, яким загрожує зникнення;",
+    "options": "11"
   },
   "BecameAHero": {
-    "text": "Despite the war, Yelanets Steppe Nature Reserve employees monitor the territory and care for the endangered animals. Reserve hosted internally displaced people and their beloved pets in the administrative building. The workers' research the flora and fauna of the Ukrainian steppes. The Yelanets Steppe Nature Reserve is a treasure gifted by nature, a symbol of freedom and defiance of Ukrainian civilians, and a source of inspiration for all Ukrainians. Employees of the Reserve now face a wartime challenge — to preserve unique Ukrainian steppes for future generations. Help us save imperiled species like American Bison and Steppe Marmot. Become a hero for Ukraine."
+    "text": "Незважаючи на війну, працівники Єланецького степу доглядають за територією та піклуються про тварин, яким загрожує зникнення. Заповідник також надав житло внутрішньо переміщеним особам та їхнім домашнім улюбленцям у своїх адміністративних будівлях. Цей заповідник – це подарований природою скарб, символ свободи та непокори мирного населення України, джерело натхнення для всіх українців. Зараз перед працівниками заповідника стоїть чітке завдання — зберегти унікальні українські степи для майбутніх поколінь. Допоможи нам врятувати види тварин, які зникають з планети. Стань героєм для України."
   },
   "Want to help": {
-    "Want to help": "Want to help?",
-    "Donate Now": "Donate Now."
+    "Want to help": "Хочеш допомогти?",
+    "Donate Now": "Підтримай зараз."
   },
   "Footer": {
-    "terms": "Terms of Service",
-    "privacy": "Privacy Policy",
-    "subscription": "Subscription Policy",
-    "reserved": "All rights reserved"
+    "terms": "Умови обслуговування",
+    "privacy": "Політика конфіденційності",
+    "subscription": "Політика передплати",
+    "reserved": "Всі права захищені"
   },
   "Support Button": {
-    "label": "Support"
+    "label": "Підтримати"
   }
 }
