@@ -1,10 +1,8 @@
-import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
+import { useTranslations } from 'use-intl';
 
 import { Button } from '../button/button';
-import { useTranslations } from 'use-intl';
-import { useRouter } from 'next/router';
-
-const Map = dynamic(() => import('../map/map'), { ssr: false });
+import Map from '../map';
 
 export const Heading = () => {
   const router = useRouter();

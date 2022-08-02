@@ -1,18 +1,20 @@
 import { FC } from 'react';
 import { useTranslations } from 'use-intl';
 
-import useMediaQuery from '../../hooks/useMediaQuery';
 import { MapCoverDesktop } from './map-cover-desktop';
 import { useRouter } from 'next/router';
 
-export const MapDesktop: FC<{ className?: string; onClick: (city: string) => () => void }> = ({
-  className,
-  onClick,
-}) => {
+export const MapDesktop: FC<{ className?: string }> = ({ className }) => {
   const router = useRouter();
   const t = useTranslations('Map');
 
   const isUkrainian = router.locale === 'ua';
+
+  const onClick = (city: string) => () => {
+    localStorage.setItem('hou_city', city);
+
+    router.push(`/city/${city}`);
+  };
 
   return (
     <MapCoverDesktop className={className}>
@@ -93,3 +95,5 @@ export const MapDesktop: FC<{ className?: string; onClick: (city: string) => () 
     </MapCoverDesktop>
   );
 };
+
+export default MapDesktop;

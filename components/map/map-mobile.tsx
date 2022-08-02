@@ -1,14 +1,17 @@
 import { FC } from 'react';
-import { MapCoverMobile } from './map-cover-mobile';
+import router from 'next/router';
 import { useTranslations } from 'use-intl';
-import { useRouter } from 'next/router';
 
-export const MapMobile: FC<{ className?: string; onClick: (city: string) => () => void }> = ({
-  className,
-  onClick: handleClick,
-}) => {
-  const router = useRouter();
+import { MapCoverMobile } from './map-cover-mobile';
+
+export const MapMobile: FC<{ className?: string }> = ({ className }) => {
   const t = useTranslations('Map');
+
+  const handleClick = (city: string) => () => {
+    localStorage.setItem('hou_city', city);
+
+    router.push(`/city/${city}`);
+  };
 
   return (
     <MapCoverMobile className={className}>
@@ -75,3 +78,5 @@ export const MapMobile: FC<{ className?: string; onClick: (city: string) => () =
     </MapCoverMobile>
   );
 };
+
+export default MapMobile;
