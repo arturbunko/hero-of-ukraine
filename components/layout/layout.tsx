@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 import { OrientationObserver } from '../orientation-observer/orientation-observer';
 
@@ -11,7 +11,7 @@ const variants = {
 
 export const Layout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <motion.main
+    <m.main
       initial="hidden"
       animate="enter"
       exit="exit"
@@ -19,6 +19,6 @@ export const Layout: FC<{ children: ReactNode }> = ({ children }) => {
       transition={{ type: 'linear' }}
     >
       <OrientationObserver>{children}</OrientationObserver>
-    </motion.main>
+    </m.main>
   );
 };

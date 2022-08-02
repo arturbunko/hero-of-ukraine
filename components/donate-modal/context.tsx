@@ -1,5 +1,5 @@
 import { createContext, ReactNode, FC, useState, useCallback, useMemo, useContext } from 'react';
-import { DonateModal } from './index';
+import DonateModal from './donate-modal';
 
 const DonateModalContext = createContext({
   onClose: () => {},
