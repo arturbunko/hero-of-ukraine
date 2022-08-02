@@ -10,7 +10,7 @@ export const YelavetsViolents = () => {
           {t('text-part-one')} <span className="text-red">{t('text-part-two')}</span>
           {t('text-part-three')}
         </p>
-        <p className="text-white lg:text-body text-[12px] lg:leading-[22.4px] lg:mt-8 mt-4 w-1/2">
+        <p className="text-white lg:text-body text-12 lg:leading-[22.4px] lg:mt-8 mt-4 w-1/2">
           {t('text-part-four')}
         </p>
       </section>

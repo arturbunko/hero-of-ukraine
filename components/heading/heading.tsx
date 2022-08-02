@@ -27,9 +27,6 @@ export const Heading = () => {
         <p className="lg:text-body text-bodyMob text-white font-mariupol lg:mt-10 mt-4 lg:max-w-[510px] max-w-[300px]">
           {t('description')}
         </p>
-        <p className="lg:text-body text-bodyMob text-white font-mariupol lg:mt-2 mt-1 lg:max-w-[510px] max-w-[300px]">
-          {t('clarification')}
-        </p>
         <Button />
       </div>
     </section>

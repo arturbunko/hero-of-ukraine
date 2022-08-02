@@ -113,7 +113,7 @@ module.exports = {
         },
       ],
       bodyMob: [
-        '14px',
+        '16px',
         {
           letterSpacing: 0,
           lineHeight: '140%',

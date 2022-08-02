@@ -37,7 +37,7 @@ const City: FC<typeof Places['0']['props']> = ({ images, path, next, prev }) => 
             <Background images={images} />
             <div className="flex flex-col items-center h-full p-6">
               <BackButton />
-              <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-[96px] h-fit items-center justify-between m-auto">
+              <div className="grid grid-cols-2 gap-y-[32px] lg:gap-x-[128px] gap-x-0 h-fit items-center justify-between m-auto">
                 <h1 className="lg:text-h2 text-[32px] text-white lg:leading-none leading-normal font-kharkiv max-w-md z-10">
                   {t('label')}.
                 </h1>
