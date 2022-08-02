@@ -1,7 +1,6 @@
 import { Places } from '../constants/places';
 
 export const getPlacePosition = (initial: string, current: string): number => {
-  const placesCount = Places.length;
   const initialIndex = Places.findIndex((value) => value.path === initial);
   const currentIndex = Places.findIndex((value) => value.path === current);
 
