@@ -30,7 +30,7 @@ export const Buttons = ({
   const createOrder = async () => {
     console.log('createOrder');
 
-    const response = await fetch('/hero-of-ukraine/next-api/payment/initiate', {
+    const response = await fetch('/next-api/payment/initiate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ export const Buttons = ({
   };
 
   const verifyPayment = async (data: Record<string, unknown>) => {
-    const response = await fetch('/hero-of-ukraine/next-api/payment/verify', {
+    const response = await fetch('/next-api/payment/verify', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

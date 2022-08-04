@@ -6,7 +6,7 @@ import { ErrorMessage } from './error-message';
 import { SuccessMessage } from './success-message';
 
 const DonateModal = ({ onClose, show }: { show: boolean; onClose: () => void }) => {
-  const [isSuccess, setIsSuccess] = useState(true);
+  const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
@@ -31,6 +31,8 @@ const DonateModal = ({ onClose, show }: { show: boolean; onClose: () => void }) 
   const isModalVisible = !isSuccess && !isError;
   const isSuccessVisible = isSuccess && !isError;
   const isErrorVisible = !isSuccess && isError;
+
+  console.log({ isModalVisible, isSuccessVisible, isErrorVisible });
 
   return (
     <Portal>
