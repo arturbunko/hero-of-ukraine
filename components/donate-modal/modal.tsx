@@ -108,6 +108,7 @@ export const Modal: FC<ModalProps> = ({ onClose, handleError, hanldeSuccess }) =
           {t('Email')}
         </label>
         <input
+          autoComplete="false"
           value={userEmail.email}
           onChange={handleEmailChanged}
           className="p-4 bg-white text-16 leading-snug text-noise font-mariupol outline-none placeholder:text-noise placeholder:opacity-50"
