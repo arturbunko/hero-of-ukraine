@@ -5,12 +5,14 @@ export const Buttons = ({
   isActive,
   purchaseName,
   email,
+  emailIsValid,
   locale,
   handleSuccess,
   handleError,
 }: {
   isActive: boolean;
   email: string;
+  emailIsValid: boolean;
   purchaseName: string;
   locale: 'uk' | 'en';
   handleSuccess: () => void;
@@ -19,13 +21,15 @@ export const Buttons = ({
   const [{ options, isResolved }, dispatch] = usePayPalScriptReducer();
 
   useEffect(() => {
-    dispatch({
-      type: 'resetOptions',
-      value: {
-        ...options,
-      },
-    });
-  }, [purchaseName, email]);
+    if (purchaseName && emailIsValid) {
+      dispatch({
+        type: 'resetOptions',
+        value: {
+          ...options,
+        },
+      });
+    }
+  }, [purchaseName, email, emailIsValid]);
 
   const createOrder = async () => {
     console.log('createOrder');

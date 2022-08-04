@@ -121,6 +121,7 @@ export const Modal: FC<ModalProps> = ({ onClose, handleError, hanldeSuccess }) =
           isActive={canPay}
           purchaseName={donate}
           email={userEmail.email}
+          emailIsValid={userEmail.isValid}
           handleError={handleError}
           handleSuccess={hanldeSuccess}
           locale={(router.locale as 'en' | 'uk') || 'en'}

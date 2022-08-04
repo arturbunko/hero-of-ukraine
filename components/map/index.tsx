@@ -2,9 +2,12 @@ import dynamic from 'next/dynamic';
 
 const Map = dynamic(
   () => {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    //if device width is tablet or less, load map with small size
+    if (window.innerWidth <= 1284) {
+      return import('./map-mobile');
+    }
 
-    return isMobile ? import('./map-mobile') : import('./map-desktop');
+    return import('./map-desktop');
   },
   { ssr: false }
 );

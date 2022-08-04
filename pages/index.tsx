@@ -23,9 +23,12 @@ const Home: NextPage = () => {
             <Progress />
             <Heading />
           </section>
-          <section id="images" className="inline-flex lg:gap-5 gap-2 lg:px-6 px-0 lg:mt-36 mt-16">
+          <section
+            id="images"
+            className="inline-grid grid-cols-3 lg:gap-5 gap-2 lg:px-6 px-0 lg:mt-36 mt-16 xl:w-4/6 w-full"
+          >
             <ImagePath
-              className="lg:max-w-full max-w-[200px] h-auto object-contain"
+              className="lg:max-w-full h-auto object-contain"
               src="/Depositphotos_563061124_S 1.jpg"
               blurDataURL="/Depositphotos_563061124_S 1.jpg"
               placeholder="blur"
@@ -34,7 +37,7 @@ const Home: NextPage = () => {
               loading="lazy"
             />
             <ImagePath
-              className="lg:max-w-full max-w-[200px] h-auto object-contain"
+              className="lg:max-w-fullh-auto object-contain"
               src="/Depositphotos_563061124_S 2.jpg"
               blurDataURL="/Depositphotos_563061124_S 2.jpg"
               placeholder="blur"
@@ -43,7 +46,7 @@ const Home: NextPage = () => {
               loading="lazy"
             />
             <ImagePath
-              className="lg:max-w-full max-w-[200px] h-auto object-contain"
+              className="lg:max-w-full h-auto object-contain"
               src="/Depositphotos_563061124_S 3.png"
               blurDataURL="/Depositphotos_563061124_S 3.png"
               placeholder="blur"
