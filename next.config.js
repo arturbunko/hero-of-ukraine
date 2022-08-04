@@ -6,6 +6,14 @@ const isDev = process.env.NODE_ENV === 'development';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/next-api/:path*',
+        destination: '/api/:path*',
+      },
+    ];
+  },
   i18n: {
     locales: ['en', 'uk'],
     defaultLocale: 'en',
