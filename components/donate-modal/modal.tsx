@@ -114,7 +114,7 @@ export const Modal: FC<ModalProps> = ({ onClose, handleError, hanldeSuccess }) =
           className="p-4 bg-white text-16 leading-snug text-noise font-mariupol outline-none placeholder:text-noise placeholder:opacity-50"
           placeholder="email@example.com"
           name="emai"
-          type="text"
+          type="email"
         />
 
         <PayPalButtons
