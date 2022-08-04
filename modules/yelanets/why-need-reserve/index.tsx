@@ -11,7 +11,6 @@ export const WhyNeedReserve = () => {
         placeholder="blur"
         blurDataURL="https://strapi.myplantin.com/thumbnail_Depositphotos_567742266_XL_2_3d0d1a4b21.webp"
         src="https://strapi.myplantin.com/Depositphotos_567742266_XL_2_3d0d1a4b21.webp"
-        layout="raw"
         width={962}
         height={696}
         external

@@ -71,5 +71,17 @@
   },
   "kinburn-spit": {
     "text": "Kinburn Spit Reserve is in the combat zone right now. Russian troops are trying to make Red List orchids and Pink lakes disappear from the European map. Ukraine is also home to a lot of endangered animals. A giant eagle in Europe —  the White-tailed Eagle, the only European wild horse —  Przewalski's Horse and the most giant European animal —  Bison suffer from shelling and occupation.  "
+  },
+  "Modal": {
+    "Support option": "Choose support option:",
+    "Email": "Type your email to get a gift:",
+    "Success": {
+      "text1": "Thank you!",
+      "text2": "Ukraine has +1 hero ❤️"
+    },
+    "Error": {
+      "text1": "Ooops!",
+      "text2": "Something went wrong 😭"
+    }
   }
 }

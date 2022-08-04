@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import { FC } from 'react';
-import { ImageProps } from 'next/dist/client/image';
+import type { ImageProps } from 'next/dist/client/future/image';
 
 export const ImagePath: FC<ImageProps & { external?: boolean }> = ({
   external = false,

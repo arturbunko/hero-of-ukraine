@@ -13,7 +13,6 @@ export const Predict = () => {
           src="/Depositphotos_567742266_XL 2.jpg"
           blurDataURL="/Depositphotos_567742266_XL 2.jpg"
           placeholder="blur"
-          layout="raw"
           width={436}
           height={580}
           loading="lazy"
@@ -25,7 +24,6 @@ export const Predict = () => {
           src="/Depositphotos_567758610_XL 1.jpg"
           blurDataURL="/Depositphotos_567758610_XL 1.jpg"
           placeholder="blur"
-          layout="raw"
           width={532.64}
           height={400}
           loading="lazy"

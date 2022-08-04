@@ -7,6 +7,6 @@ export const languages = [
   {
     icon: '/ukraine.png',
     lang: 'Українська',
-    prefix: 'ua',
+    prefix: 'uk',
   },
 ];

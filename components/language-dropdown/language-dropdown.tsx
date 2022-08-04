@@ -32,7 +32,7 @@ const LanguageDropdown = () => {
         <button className="flex flex-row items-center" onClick={() => setIsOpened(!isOpened)}>
           <CountryFlag image={activeLanguage.icon} />
           <p className="ml-2 mr-5 lx:text-body text-bodyMob">{activeLanguage.lang}</p>
-          <ImagePath src="/caret_down.svg" layout="fixed" width={10} height={15} />
+          <ImagePath src="/caret_down.svg" width={10} height={15} />
         </button>
       </div>
       <div
@@ -63,7 +63,7 @@ const LanguageDropdown = () => {
 const CountryFlag = ({ image }: { image: typeof languages[0]['icon'] }) => {
   return (
     <div className="rounded-full w-[24px] h-[24px] overflow-hidden">
-      <ImagePath className={`min-w-[24px]`} src={image} layout="raw" width={48} height={48} />
+      <ImagePath className={`min-w-[24px]`} src={image} width={48} height={48} />
     </div>
   );
 };

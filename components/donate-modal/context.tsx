@@ -1,3 +1,4 @@
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import { createContext, ReactNode, FC, useState, useCallback, useMemo, useContext } from 'react';
 import DonateModal from './donate-modal';
 
@@ -38,10 +39,16 @@ export const DonateModalProvider: FC<{ children: ReactNode }> = ({ children }) =
   );
 
   return (
-    <DonateModalContext.Provider value={value}>
-      {children}
-      <DonateModal show={show} onClose={onClose} />
-    </DonateModalContext.Provider>
+    <PayPalScriptProvider
+      options={{
+        'client-id': process.env.NEXT_PUBLIC_P_ID as string,
+      }}
+    >
+      <DonateModalContext.Provider value={value}>
+        {children}
+        <DonateModal show={show} onClose={onClose} />
+      </DonateModalContext.Provider>
+    </PayPalScriptProvider>
   );
 };
 

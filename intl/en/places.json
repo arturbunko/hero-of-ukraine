@@ -72,5 +72,17 @@
   },
   "Support Button": {
     "label": "Support"
+  },
+  "Modal": {
+    "Support option": "Choose support option:",
+    "Email": "Type your email to get a gift:",
+    "Success": {
+      "text1": "Thank you!",
+      "text2": "Ukraine has +1 hero ❤️"
+    },
+    "Error": {
+      "text1": "Ooops!",
+      "text2": "Something went wrong 😭"
+    }
   }
 }

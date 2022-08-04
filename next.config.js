@@ -7,7 +7,7 @@ const isDev = process.env.NODE_ENV === 'development';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   i18n: {
-    locales: ['en', 'ua'],
+    locales: ['en', 'uk'],
     defaultLocale: 'en',
   },
   images: {
@@ -18,9 +18,7 @@ const nextConfig = {
   experimental: {
     runtime: 'nodejs',
     serverComponents: true,
-    images: {
-      layoutRaw: true,
-    },
+    images: { allowFutureImage: true },
   },
 };
 

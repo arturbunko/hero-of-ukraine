@@ -29,7 +29,6 @@ const Home: NextPage = () => {
               src="/Depositphotos_563061124_S 1.jpg"
               blurDataURL="/Depositphotos_563061124_S 1.jpg"
               placeholder="blur"
-              layout="raw"
               width={400}
               height={300}
               loading="lazy"
@@ -39,7 +38,6 @@ const Home: NextPage = () => {
               src="/Depositphotos_563061124_S 2.jpg"
               blurDataURL="/Depositphotos_563061124_S 2.jpg"
               placeholder="blur"
-              layout="raw"
               width={400}
               height={300}
               loading="lazy"
@@ -49,7 +47,6 @@ const Home: NextPage = () => {
               src="/Depositphotos_563061124_S 3.png"
               blurDataURL="/Depositphotos_563061124_S 3.png"
               placeholder="blur"
-              layout="raw"
               width={400}
               height={300}
               loading="lazy"
