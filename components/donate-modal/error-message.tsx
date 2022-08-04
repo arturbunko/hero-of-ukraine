@@ -32,7 +32,7 @@ export const ErrorMessage = ({ onClose }: { onClose: () => void }) => {
         </svg>
       </button>
       <p>{t('text1')}</p>
-      <p>{t('text2')}</p>
+      <p className="mt-6 lg:text-left text-center">{t('text2')}</p>
     </div>
   );
 };
