@@ -26,6 +26,9 @@ export const WantToHelp = () => {
           'hover:before:absolute hover:before:bottom-0 hover:before:left-[15%] hover:before:border-2 hover:before:border-arrow hover:before:w-full',
           isUkrainian ? 'xl:text-[110px] xl:leading-[160%]' : 'xl:text-h0',
         ].join(' ')}
+        style={{
+          textShadow: '0px 0px #00000000',
+        }}
       >
         {t('Donate Now')}
       </button>
