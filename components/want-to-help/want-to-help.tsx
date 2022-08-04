@@ -19,19 +19,16 @@ export const WantToHelp = () => {
       >
         {t('Want to help')}
       </h2>
-      <button
+      <p
         onClick={setShow}
         className={[
-          'relative font-kharkiv lg:text-h2 text-[56px] bg-gradient-to-r from-blue to-yellow bg-clip-text text-fill-transparent cursor-pointer',
+          'relative w-fit font-kharkiv lg:text-h2 text-[56px] bg-gradient-to-r from-blue to-yellow bg-clip-text text-fill-transparent cursor-pointer',
           'hover:before:absolute hover:before:bottom-0 hover:before:left-[15%] hover:before:border-2 hover:before:border-arrow hover:before:w-full',
           isUkrainian ? 'xl:text-[110px] xl:leading-[160%]' : 'xl:text-h0',
         ].join(' ')}
-        style={{
-          textShadow: '0px 0px #00000000',
-        }}
       >
         {t('Donate Now')}
-      </button>
+      </p>
     </section>
   );
 };
