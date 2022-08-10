@@ -14,7 +14,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="h-16 flex items-center justify-between px-6 border-b-[1px] border-[#2C2C34]">
+    <header className="h-16 flex items-center justify-between md:px-6 px-4 border-b-[1px] border-[#2C2C34]">
       <nav className="h-full">
         <ul className="flex items-center h-full bg-title-background bg-no-repeat bg-left">
           <h1 className="lg:text-body text-bodyMob text-white font-kharkiv lg:mr-[52px] mr-[42px] cursor-pointer">
