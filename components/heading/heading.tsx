@@ -15,16 +15,11 @@ export const Heading = () => {
       <div className="self-end xl:w-[1050px] xl:h-[702px] w-[434px] h-[290px] z-10">
         <Map className="self-end" />
       </div>
-      <div
-        className={[
-          'flex flex-col xl:-mt-[26rem] mt-[-18.5rem]',
-          // isUkrainian ? 'xl:-mt-[28rem]' : 'lg:-mt-[26rem]',
-        ].join(' ')}
-      >
-        <h1 className="tracking-tighter xl:text-h1 lg:text-h2 text-h2Mob xl:leading-none lg:leading-none leading-none text-white font-kharkiv w-full xl:max-w-[895px] lg:max-w-[700px] max-w-[390px]">
+      <div className={['flex flex-col xl:-mt-[26rem] md:mt-[-18.5rem] mt-0'].join(' ')}>
+        <h1 className="tracking-tighter xl:text-h1 lg:text-h2 md:text-h2Mob text-[38px] xl:leading-none !leading-tight text-white font-kharkiv w-full xl:max-w-[895px] lg:max-w-[700px] md:max-w-[390px] max-w-full">
           {t('title')}
         </h1>
-        <p className="lg:text-body text-bodyMob text-white font-mariupol lg:mt-10 mt-4 xl:max-w-[510px] lg:max-w-[400px] max-w-[300px]">
+        <p className="lg:text-body text-bodyMob text-white font-mariupol lg:mt-10 mt-4 xl:max-w-[510px] lg:max-w-[400px] md:max-w-[300px] w-full">
           {t('description')}
         </p>
         <Button />

@@ -19,13 +19,13 @@ const Home: NextPage = () => {
       <DonateModalProvider>
         <Header />
         <main>
-          <section className="px-6">
+          <section className="md:px-6 px-4">
             <Progress />
             <Heading />
           </section>
           <section
             id="images"
-            className="inline-grid grid-cols-3 lg:gap-5 gap-2 lg:px-6 px-0 lg:mt-36 mt-16 xl:w-4/6 w-full"
+            className="md:inline-grid md:grid-cols-3 grid grid-cols-1 lg:gap-5 gap-2 lg:px-6 px-0 lg:mt-36 mt-16 xl:w-4/6 w-full"
           >
             <ImagePath
               className="lg:max-w-full h-auto object-contain"
@@ -55,13 +55,13 @@ const Home: NextPage = () => {
               loading="lazy"
             />
           </section>
-          <section className="px-6">
+          <section className="md:px-6 px-4">
             <HelpUs />
             <Predict />
             <Violence />
           </section>
           <AboutUs />
-          <section className="px-6">
+          <section className="md:px-6 px-4">
             <WantToHelp />
             <Footer />
           </section>

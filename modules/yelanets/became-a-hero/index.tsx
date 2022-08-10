@@ -5,9 +5,9 @@ export const BecameAHero = () => {
   const t = useTranslations('BecameAHero');
 
   return (
-    <section className="flex lg:gap-36 gap-8 lg:px-6 px-10 lg:mt-40 mt-16">
+    <section className="flex md:flex-row flex-col lg:gap-36 gap-8 lg:px-6 md:px-10 px-4 lg:mt-40 mt-16">
       <ImagePath
-        className="flex-1 w-full lg:h-auto h-[375px] min-w-[392px] object-cover"
+        className="md:flex-1 flex-auto w-full lg:h-auto h-[375px] md:min-w-[392px] min-w-full object-cover"
         placeholder="blur"
         blurDataURL="https://strapi.myplantin.com/thumbnail_image_1_00bb15dd94.webp"
         src="https://strapi.myplantin.com/image_1_00bb15dd94.webp"

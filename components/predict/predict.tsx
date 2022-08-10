@@ -6,8 +6,8 @@ export const Predict = () => {
   const t = useTranslations('Predict');
 
   return (
-    <section className="flex flex-row">
-      <div className="w-[60%] lg:h-[580px] h-[375px]">
+    <section className="flex md:flex-row flex-col">
+      <div className="md:w-[60%] w-full lg:h-[580px] h-[375px]">
         <ImagePath
           className="lg:w-[436px] lg:h-[580px] lg:object-center w-full h-[375px] object-cover"
           src="/Depositphotos_567742266_XL 2.jpg"
@@ -18,9 +18,9 @@ export const Predict = () => {
           loading="lazy"
         />
       </div>
-      <div className="flex flex-col lg:w-full justify-between w-[40%] lg:ml-[10%] ml-[5%] md:gap-0 gap-1">
+      <div className="flex md:flex-col flex-row lg:w-full justify-between md:w-[40%] w-full md:mt-0 mt-3 lg:ml-[10%] md:ml-[5%] ml-0 md:gap-0 gap-3">
         <ImagePath
-          className="lg:w-[532px] lg:h-[400px] lg:object-center w-full h-[218px] object-cover"
+          className="lg:w-[532px] md:w-full w-1/2 lg:h-[400px] lg:object-center  h-[218px] object-cover"
           src="/Depositphotos_567758610_XL 1.jpg"
           blurDataURL="/Depositphotos_567758610_XL 1.jpg"
           placeholder="blur"
@@ -28,7 +28,7 @@ export const Predict = () => {
           height={400}
           loading="lazy"
         />
-        <p className="lg:text-body text-bodyMob text-white self-end lg:w-[472px] lg:mt-0 mt-2 w-full">
+        <p className="lg:text-body text-bodyMob text-white md:self-end self-start lg:w-[472px] lg:mt-0 md:mt-2 mt-0 w-full">
           {t('text')}
         </p>
       </div>

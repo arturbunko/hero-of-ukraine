@@ -22,13 +22,13 @@ export const Header = () => {
           </h1>
           <li
             onClick={scrollTo('about-us')}
-            className="lg:text-body text-bodyMob text-white font-mariupol hover:bg-gradient-to-r hover:from-blue hover:to-yellow hover:bg-clip-text hover:text-fill-transparent cursor-pointer"
+            className="md:block hidden lg:text-body md:text-bodyMob text-white font-mariupol hover:bg-gradient-to-r hover:from-blue hover:to-yellow hover:bg-clip-text hover:text-fill-transparent cursor-pointer"
           >
             {t('about_us')}
           </li>
           <li
             onClick={scrollTo('contact')}
-            className="ml-6 lg:text-body text-bodyMob text-white font-mariupol hover:bg-gradient-to-r hover:from-blue hover:to-yellow hover:bg-clip-text hover:text-fill-transparent cursor-pointer"
+            className="md:block hidden  ml-6 lg:text-body text-bodyMob text-white font-mariupol hover:bg-gradient-to-r hover:from-blue hover:to-yellow hover:bg-clip-text hover:text-fill-transparent cursor-pointer"
           >
             {t('contact')}
           </li>

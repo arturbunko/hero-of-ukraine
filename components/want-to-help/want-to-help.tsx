@@ -13,7 +13,7 @@ export const WantToHelp = () => {
     <section id="#want-to-help" className="lg:mt-36 mt-14">
       <h2
         className={[
-          'font-kharkiv lg:text-h2 text-[56px] mix-blend-overlay tracking-tighter xl:mb-10 lg:mb-10',
+          'font-kharkiv lg:text-h2 md:text-[56px] text-[40px] mix-blend-overlay tracking-tighter xl:mb-10 lg:mb-10',
           isUkrainian ? 'xl:text-[110px] xl:leading-[160%]' : 'xl:text-h0',
         ].join(' ')}
       >
@@ -22,7 +22,7 @@ export const WantToHelp = () => {
       <p
         onClick={setShow}
         className={[
-          'relative w-fit font-kharkiv lg:text-h2 text-[56px] bg-gradient-to-r from-blue to-yellow bg-clip-text text-fill-transparent cursor-pointer',
+          'relative w-fit font-kharkiv lg:text-h2 md:text-[56px] text-[40px] bg-gradient-to-r from-blue to-yellow bg-clip-text text-fill-transparent cursor-pointer',
           'hover:before:absolute hover:before:bottom-0 hover:before:left-[15%] hover:before:border-2 hover:before:border-arrow hover:before:w-full',
           isUkrainian ? 'xl:text-[110px] xl:leading-[160%]' : 'xl:text-h0',
         ].join(' ')}

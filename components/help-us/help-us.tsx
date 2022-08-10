@@ -9,8 +9,8 @@ export const HelpUs = () => {
       <h2 className="xl:text-h0 lg:text-h0Lg text-[44px] text-transparent font-kharkiv text-stroke-1.5 text-stroke-white">
         {t('title1')}
       </h2>
-      <div className="flex flex-row items-center justify-betweenlg:mt-12 mt-4 text-white">
-        <div className="text-white lg:text-body text-bodyMob lg:max-w-md max-w-[50%]">
+      <div className="flex md:flex-row flex-col-reverse items-center justify-betweenlg:mt-12 mt-4 text-white">
+        <div className="text-white lg:text-body text-bodyMob lg:max-w-md md:max-w-[50%] max-w-full md:mt-0 mt-3">
           <p>{t('text1')}</p>
           <p className="lg:mt-8 mt-4">{t('text2')}</p>
         </div>
