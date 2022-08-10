@@ -5,6 +5,13 @@ module.exports = {
     './modules/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      sm: '468px',
+      md: '640px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     colors: {
       noise: '#1f1f27',
       red: '#CD0001',
