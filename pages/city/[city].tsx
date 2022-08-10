@@ -33,7 +33,7 @@ const City: FC<typeof Places['0']['props']> = ({ images, path, next, prev }) => 
     <Layout>
       <DonateModalProvider>
         <section>
-          <div className="relative flex flex-col items-center w-full md:h-screen h-3/4">
+          <div className="relative flex flex-col items-center w-full h-screen">
             <Background images={images} />
             <div className="flex flex-col items-center h-full p-6">
               <BackButton />
