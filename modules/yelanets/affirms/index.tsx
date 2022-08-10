@@ -14,7 +14,7 @@ export const Affirms = () => {
       <ol className="flex flex-col lg:gap-4 gap-2 lg:mt-6 mt-4">
         {options.map((option) => (
           <li
-            className="relative flex items-center max-w-[448px] lg:text-body text-12 before:block before:content-[''] before:w-[94px] before:min-w-[94px] before:h-[1px] before:mr-6 before:bg-white"
+            className="relative flex items-center max-w-[448px] lg:text-body md:text-12 text-14 before:block before:content-[''] before:w-[94px] before:min-w-[94px] before:h-[1px] before:mr-6 before:bg-white"
             key={option}
           >
             {t(option)}
