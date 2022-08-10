@@ -15,7 +15,7 @@ export const BecameAHero = () => {
         height={720}
         external
       />
-      <p className="self-end lg:w-1/2 w-full lg:p-16 p-4 bg-white-05 bg-blend-overlay lg:text-body text-12 text-center">
+      <p className="self-end lg:w-1/2 w-full lg:p-16 p-4 bg-white-05 bg-blend-overlay lg:text-body md:text-12 text-16 text-center">
         {t('text')}
       </p>
     </section>

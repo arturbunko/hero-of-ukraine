@@ -16,8 +16,8 @@ export const WhyNeedReserve = () => {
         external
       />
       <div className="self-end">
-        <p className="lg:text-body md:text-12 text-[14px] lg:mb-11 mb-4">{t('text1')}</p>
-        <p className="lg:text-body md:text-12 text-[14px]">{t('text2')}</p>
+        <p className="lg:text-body md:text-12 text-16 lg:mb-11 mb-4">{t('text1')}</p>
+        <p className="lg:text-body md:text-12 text-16">{t('text2')}</p>
       </div>
     </section>
   );
