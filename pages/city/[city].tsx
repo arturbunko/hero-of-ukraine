@@ -13,6 +13,7 @@ import { ButtonFlat } from '../../components/button-flat/button-flat';
 import { WantToHelp } from '../../components/want-to-help/want-to-help';
 import { Background } from '../../components/city-background/background';
 import { DonateModalProvider } from '../../components/donate-modal/context';
+import { NextSeo } from 'next-seo';
 
 const City: FC<typeof Places['0']['props']> = ({ images, path, next, prev }) => {
   const [placePosition, setPlacePosition] = useState(1);
@@ -31,6 +32,7 @@ const City: FC<typeof Places['0']['props']> = ({ images, path, next, prev }) => 
 
   return (
     <Layout>
+      <NextSeo title={`Hero Of Ukraine | ${t('label')}`} />
       <DonateModalProvider>
         <section>
           <div className="relative flex flex-col items-center w-full h-screen">

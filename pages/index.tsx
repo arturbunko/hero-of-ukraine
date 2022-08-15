@@ -12,10 +12,29 @@ import { Violence } from '../components/violence/violence';
 import { ImagePath } from '../components/image-path/image-path';
 import { WantToHelp } from '../components/want-to-help/want-to-help';
 import { DonateModalProvider } from '../components/donate-modal/context';
+import { NextSeo } from 'next-seo';
+import { useTranslations } from 'next-intl';
 
 const Home: NextPage = () => {
+  const t = useTranslations('About Us');
   return (
     <Layout>
+      <NextSeo
+        openGraph={{
+          title: 'Hero of Ukraine',
+          description: t('text'),
+          url: 'https://stage.myplantin.com/hero-of-ukraine',
+          site_name: 'Hero of Ukraine',
+          images: [
+            {
+              url: 'https://strapi.myplantin.com/image.png',
+              width: 1200,
+              height: 630,
+              alt: 'Hero of Ukraine',
+            },
+          ],
+        }}
+      />
       <DonateModalProvider>
         <Header />
         <main>
